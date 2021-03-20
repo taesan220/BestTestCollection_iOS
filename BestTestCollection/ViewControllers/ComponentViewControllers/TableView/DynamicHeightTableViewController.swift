@@ -34,6 +34,8 @@ class DynamicHeightTableViewController: UIViewController, UITableViewDelegate, U
         
         self.initView()
         
+        self.tableView.bounces = false
+        
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellName)
     }
     
@@ -108,7 +110,8 @@ class DynamicHeightTableViewController: UIViewController, UITableViewDelegate, U
             let cell = tableView.dequeueReusableCell(withIdentifier: cellName, for: indexPath)
             
             cell.textLabel?.text = "No data"
-            cell.textLabel?.textAlignment = NSTextAlignment.center
+            cell.selectionStyle = .none     //셀 선택시 셀 색이 변하지 않도록 적용
+            cell.textLabel?.textAlignment = NSTextAlignment.center  //중앙 정렬
 
             return cell
         }
@@ -116,6 +119,7 @@ class DynamicHeightTableViewController: UIViewController, UITableViewDelegate, U
         let cell = tableView.dequeueReusableCell(withIdentifier: cellName, for: indexPath)
         
         cell.textLabel?.text = String(arrCellData[indexPath.row])
+        cell.selectionStyle = .none     //셀 선택시 셀 색이 변하지 않도록 적용
         cell.textLabel?.textAlignment = NSTextAlignment.left
 
         return cell
