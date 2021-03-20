@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Alert View Controller-->
+        <scene sceneID="EsA-YV-iyc">
+            <objects>
+                <viewController storyboardIdentifier="customAlertVC" id="QOw-su-0dm" customClass="CustomAlertViewController" customModule="BestTestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nK7-Eo-fUm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7m-l1-fD6">
+                                <rect key="frame" x="30" y="174" width="354" height="30"/>
+                                <state key="normal" title="Cancelable Alert"/>
+                                <connections>
+                                    <action selector="cancelAlertPopUpButtonPressed:" destination="QOw-su-0dm" eventType="touchUpInside" id="jPe-i5-NWv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgp-M8-RgV">
+                                <rect key="frame" x="30" y="94" width="354" height="30"/>
+                                <state key="normal" title="Normal Alert"/>
+                                <connections>
+                                    <action selector="NormalAlertPopUpButtonPressed:" destination="QOw-su-0dm" eventType="touchUpInside" id="ka7-Iw-xW8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt9-7S-Zrl">
+                                <rect key="frame" x="30" y="228" width="354" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Rh1-KA-PYw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wez-lt-T3c">
+                                <rect key="frame" x="30" y="254" width="354" height="30"/>
+                                <state key="normal" title="Alert with TextField"/>
+                                <connections>
+                                    <action selector="textFieldAlertPopUpButtonPressed:" destination="QOw-su-0dm" eventType="touchUpInside" id="2gE-UO-fvk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cB7-ps-1Jf">
+                                <rect key="frame" x="30" y="334" width="354" height="30"/>
+                                <state key="normal" title="Alert with ViewController"/>
+                                <connections>
+                                    <action selector="viewControllerAlertPopUpButtonPressed:" destination="QOw-su-0dm" eventType="touchUpInside" id="sgh-Pb-RbB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gkA-0j-hih"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wez-lt-T3c" firstAttribute="trailing" secondItem="k7m-l1-fD6" secondAttribute="trailing" id="1Ir-i6-xAS"/>
+                            <constraint firstItem="cB7-ps-1Jf" firstAttribute="top" secondItem="wez-lt-T3c" secondAttribute="bottom" constant="50" id="BZo-YN-RZv"/>
+                            <constraint firstItem="wez-lt-T3c" firstAttribute="leading" secondItem="k7m-l1-fD6" secondAttribute="leading" id="ELt-2R-i0v"/>
+                            <constraint firstItem="lt9-7S-Zrl" firstAttribute="top" secondItem="k7m-l1-fD6" secondAttribute="bottom" constant="24" id="Elm-wv-BHV"/>
+                            <constraint firstItem="cB7-ps-1Jf" firstAttribute="trailing" secondItem="wez-lt-T3c" secondAttribute="trailing" id="FPK-iq-06j"/>
+                            <constraint firstItem="wez-lt-T3c" firstAttribute="top" secondItem="lt9-7S-Zrl" secondAttribute="bottom" constant="5" id="Tk0-fP-F0V"/>
+                            <constraint firstItem="k7m-l1-fD6" firstAttribute="leading" secondItem="wgp-M8-RgV" secondAttribute="leading" id="a5N-Xn-TS8"/>
+                            <constraint firstItem="wgp-M8-RgV" firstAttribute="top" secondItem="gkA-0j-hih" secondAttribute="top" constant="50" id="cyN-ey-Fhc"/>
+                            <constraint firstItem="gkA-0j-hih" firstAttribute="trailing" secondItem="wgp-M8-RgV" secondAttribute="trailing" constant="30" id="dKT-QP-wne"/>
+                            <constraint firstItem="lt9-7S-Zrl" firstAttribute="trailing" secondItem="k7m-l1-fD6" secondAttribute="trailing" id="gEn-Gp-h8R"/>
+                            <constraint firstItem="k7m-l1-fD6" firstAttribute="trailing" secondItem="wgp-M8-RgV" secondAttribute="trailing" id="jL4-yN-dW5"/>
+                            <constraint firstItem="cB7-ps-1Jf" firstAttribute="leading" secondItem="wez-lt-T3c" secondAttribute="leading" id="jcX-bx-3a3"/>
+                            <constraint firstItem="lt9-7S-Zrl" firstAttribute="leading" secondItem="k7m-l1-fD6" secondAttribute="leading" id="lpP-YN-4e1"/>
+                            <constraint firstItem="wgp-M8-RgV" firstAttribute="leading" secondItem="gkA-0j-hih" secondAttribute="leading" constant="30" id="vdB-v5-FwY"/>
+                            <constraint firstItem="k7m-l1-fD6" firstAttribute="top" secondItem="wgp-M8-RgV" secondAttribute="bottom" constant="50" id="vz8-kx-HgN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAlertWithTextFieldPopUp" destination="wez-lt-T3c" id="VDX-QE-2I7"/>
+                        <outlet property="btnAlertWithViewController" destination="cB7-ps-1Jf" id="CEV-vs-3Ua"/>
+                        <outlet property="btnCancalableAlertPopUp" destination="wgp-M8-RgV" id="yEI-br-8b8"/>
+                        <outlet property="btnNormalAlertPopUp" destination="k7m-l1-fD6" id="aeD-Tb-dDH"/>
+                        <outlet property="lbInputOnTextField" destination="lt9-7S-Zrl" id="R8m-Of-JTB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYT-9G-FQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186.95652173913044" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

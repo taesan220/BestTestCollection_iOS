@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Indicator View Controller-->
+        <scene sceneID="X2V-Dh-xDQ">
+            <objects>
+                <viewController storyboardIdentifier="customIndicatorVC" id="cxc-qX-yea" customClass="CustomIndicatorViewController" customModule="BestTestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bMe-gJ-0uJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn5-5z-zvz">
+                                <rect key="frame" x="30" y="578" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="L3D-yj-hr4"/>
+                                </constraints>
+                                <state key="normal" title="Show Indicator"/>
+                                <connections>
+                                    <action selector="IndicatorCallButtonPressed:" destination="cxc-qX-yea" eventType="touchUpInside" id="8Oa-E2-xeX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4TQ-8U-Mis"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dn5-5z-zvz" firstAttribute="centerX" secondItem="bMe-gJ-0uJ" secondAttribute="centerX" id="4Ff-dc-ZDe"/>
+                            <constraint firstItem="Dn5-5z-zvz" firstAttribute="centerY" secondItem="bMe-gJ-0uJ" secondAttribute="centerY" constant="150" id="Qfe-2W-p8A"/>
+                            <constraint firstItem="Dn5-5z-zvz" firstAttribute="leading" secondItem="4TQ-8U-Mis" secondAttribute="leading" constant="30" id="WLo-VH-jRJ"/>
+                            <constraint firstItem="4TQ-8U-Mis" firstAttribute="trailing" secondItem="Dn5-5z-zvz" secondAttribute="trailing" constant="30" id="ckE-AJ-9Hi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnIndicatorCall" destination="Dn5-5z-zvz" id="37F-iO-np5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Q6-hk-TRD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

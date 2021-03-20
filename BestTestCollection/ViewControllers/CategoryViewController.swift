@@ -21,53 +21,18 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     var navigationTitle: String!
     var subCategoryKey: String!
     
-    static let STORYBOARD_NAME: String = "storyboard_name"
-    static let IDENTIFICATION_KEY: String = "identified_key"
-    static let VIEWCONTROLLERS = "viewcontrollers"
-
-    static let SUB_VIEWCONTROLLER_NAME = "sub_viewcontroller_name"
-    static let SUB_VIEWCONTROLLER_ITENTIFIER = "sub_viewcontroller_identifier"
     
     let cellReuseIdentifier = "subCell"
     
-    var subCategoryDatas = [
-        [MainViewController.SEQUENCE : "1", MainViewController.SUB_KEY: "uiview",  STORYBOARD_NAME: "Component",
-         VIEWCONTROLLERS : [[SUB_VIEWCONTROLLER_NAME : "Custom Button", SUB_VIEWCONTROLLER_ITENTIFIER : "custombuttonVC"]]],
-        
-
-        [MainViewController.SEQUENCE : "2", MainViewController.SUB_KEY: "alert_toast",  STORYBOARD_NAME: "Component",
-         VIEWCONTROLLERS : [[SUB_VIEWCONTROLLER_NAME : "Custom Button", SUB_VIEWCONTROLLER_ITENTIFIER : "custombuttonVC"]]],
+    var listModel: ListModel!
     
-    
-        [MainViewController.SEQUENCE : "3", MainViewController.SUB_KEY: "tableview",  STORYBOARD_NAME: "Component",
-         VIEWCONTROLLERS : [[SUB_VIEWCONTROLLER_NAME : "Custom Button", SUB_VIEWCONTROLLER_ITENTIFIER : "custombuttonVC"]]],
-        
-        
-        [MainViewController.SEQUENCE : "4", MainViewController.SUB_KEY: "component",  STORYBOARD_NAME: "Component",
-         VIEWCONTROLLERS : [[SUB_VIEWCONTROLLER_NAME : "Custom Button", SUB_VIEWCONTROLLER_ITENTIFIER : "custombuttonVC"]]],
-        
-        
-        [MainViewController.SEQUENCE : "5", MainViewController.SUB_KEY: "webview",  STORYBOARD_NAME: "Component",
-         VIEWCONTROLLERS : [[SUB_VIEWCONTROLLER_NAME : "Custom Button", SUB_VIEWCONTROLLER_ITENTIFIER : "custombuttonVC"]]],
-        
-        
-        [MainViewController.SEQUENCE : "6", MainViewController.SUB_KEY: "database",  STORYBOARD_NAME: "Component",
-         VIEWCONTROLLERS : [[SUB_VIEWCONTROLLER_NAME : "Custom Button", SUB_VIEWCONTROLLER_ITENTIFIER : "custombuttonVC"]]],
-        
-        
-        [MainViewController.SEQUENCE : "7", MainViewController.SUB_KEY: "api_connection",  STORYBOARD_NAME: "Component",
-         VIEWCONTROLLERS : [[SUB_VIEWCONTROLLER_NAME : "Custom Button", SUB_VIEWCONTROLLER_ITENTIFIER : "custombuttonVC"]]],
-        
-        
-        [MainViewController.SEQUENCE : "8", MainViewController.SUB_KEY: "third_party_connection",  STORYBOARD_NAME: "Component",
-         VIEWCONTROLLERS : [[SUB_VIEWCONTROLLER_NAME : "Custom Button", SUB_VIEWCONTROLLER_ITENTIFIER : "custombuttonVC"]]]
-    ]
-    
-    var arrSubCategory: Dictionary<String, Any>!
+    //var arrSubCategory: [ListModel]!
 
 //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = listModel.listName
 
         self.subCategoryTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
@@ -75,31 +40,21 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         print("Identifier title = \(subCategoryKey ?? "nil")")
         
         self.navigationItem.title = self.navigationTitle  //상단 타이틀 변경
-        
-        
-        for subCategoryInfo in subCategoryDatas {
-            
-            if (subCategoryInfo[MainViewController.SUB_KEY] as! String) == subCategoryKey {
-                
-                arrSubCategory = subCategoryInfo
-                
-                subCategoryTableView.reloadData()
-
-                return
-            }
-            
-        }
+    }
+    
+    func setSubCategoryData(listModel: ListModel) {
+        self.listModel = listModel
     }
 
 //MARK: - TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        guard let identifierKey: [Dictionary<String, String>] = arrSubCategory[CategoryViewController.VIEWCONTROLLERS] as? [Dictionary<String, String>] else {
-            return 0
-        }
+//        guard let identifierKey: [Dictionary<String, String>] = arrSubCategory[VIEWCONTROLLERS] as? [Dictionary<String, String>] else {
+//            return 0
+//        }
         
-        return identifierKey.count
+        return listModel.viewControllers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -107,18 +62,21 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         
         let cell = self.subCategoryTableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)! as UITableViewCell
         
-        guard let identifierKey: [Dictionary<String, String>] = arrSubCategory[CategoryViewController.VIEWCONTROLLERS] as? [Dictionary<String, String>] else {
-            return cell
-        }
+//        guard let identifierKey: [Dictionary<String, String>] = arrSubCategory[VIEWCONTROLLERS] as? [Dictionary<String, String>] else {
+//            return cell
+//        }
         
         let index = indexPath.row
         
-        let viewControllerInfo: Dictionary<String, String> = identifierKey[index]
+//        let viewControllerInfo: Dictionary<String, String> = identifierKey[index]
         
-        let name = viewControllerInfo[CategoryViewController.SUB_VIEWCONTROLLER_NAME]
+        let name = listModel.listName
+        //subViewControllerName: "Custom Button", subViewControllerIdentifier: "custombuttonVC")
+
+
 
         let text = String(index + 1) +
-            ". " + name!
+            ". " + name
         
         cell.textLabel?.text = text
 
@@ -126,13 +84,16 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboarName:String = arrSubCategory[CategoryViewController.STORYBOARD_NAME] as! String
+        let storyboarName:String = listModel.storyboardName
+        let identifier:String = listModel.viewControllers[indexPath.row].subViewControllerIdentifier
+
+        print("storyboard name = \(storyboarName)")
         
-        let viewControllerInfo:[Dictionary<String, String>] = arrSubCategory[CategoryViewController.VIEWCONTROLLERS] as! [Dictionary<String, String>]
-        let identifier: String = viewControllerInfo[indexPath.row][CategoryViewController.SUB_VIEWCONTROLLER_ITENTIFIER]!
-        
- 
+//        let viewControllerInfo:[Dictionary<String, String>] = arrSubCategory[VIEWCONTROLLERS] as! [Dictionary<String, String>]
+//        let identifier: String = viewControllerInfo[indexPath.row][SUB_VIEWCONTROLLER_ITENTIFIER]!
+//        
+// 
         let vc = UIStoryboard(name: storyboarName, bundle: nil).instantiateViewController(withIdentifier: identifier)
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.show(vc, sender: self)
     }
 }
