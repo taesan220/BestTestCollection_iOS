@@ -19,6 +19,9 @@
 		807496E12605BDFA009B8BD2 /* AlertandToast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807496E02605BDFA009B8BD2 /* AlertandToast.storyboard */; };
 		807496E52605BE3D009B8BD2 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496E42605BE3D009B8BD2 /* CustomAlertViewController.swift */; };
 		807496EA2605BF4F009B8BD2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496E92605BF4F009B8BD2 /* Alert.swift */; };
+		807496F126066E23009B8BD2 /* ExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496F026066E23009B8BD2 /* ExpandableTableView.swift */; };
+		807496F526067229009B8BD2 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807496F426067229009B8BD2 /* TableView.storyboard */; };
+		807496F826067AA9009B8BD2 /* DynamicHeightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496F726067AA9009B8BD2 /* DynamicHeightTableViewController.swift */; };
 		809BAC992601194D00D975A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BAC982601194D00D975A1 /* AppDelegate.swift */; };
 		809BAC9D2601194D00D975A1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BAC9C2601194D00D975A1 /* MainViewController.swift */; };
 		809BACA02601194D00D975A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809BAC9E2601194D00D975A1 /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 		807496E02605BDFA009B8BD2 /* AlertandToast.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertandToast.storyboard; sourceTree = "<group>"; };
 		807496E42605BE3D009B8BD2 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		807496E92605BF4F009B8BD2 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		807496F026066E23009B8BD2 /* ExpandableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableView.swift; sourceTree = "<group>"; };
+		807496F426067229009B8BD2 /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
+		807496F726067AA9009B8BD2 /* DynamicHeightTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTableViewController.swift; sourceTree = "<group>"; };
 		809BAC952601194D00D975A1 /* BestTestCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestTestCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809BAC982601194D00D975A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		809BAC9C2601194D00D975A1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +124,15 @@
 			path = Graphic;
 			sourceTree = "<group>";
 		};
+		807496EF26066DF0009B8BD2 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				807496F026066E23009B8BD2 /* ExpandableTableView.swift */,
+				807496F726067AA9009B8BD2 /* DynamicHeightTableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		809BAC8C2601194D00D975A1 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +181,7 @@
 				807496E02605BDFA009B8BD2 /* AlertandToast.storyboard */,
 				809BACD626012C9D00D975A1 /* Component.storyboard */,
 				807496B52605263E009B8BD2 /* Graphic.storyboard */,
+				807496F426067229009B8BD2 /* TableView.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -176,6 +192,7 @@
 				807496D92605B319009B8BD2 /* UIView */,
 				807496E32605BE21009B8BD2 /* Alert & Toast */,
 				807496ED2605CA38009B8BD2 /* Graphic */,
+				807496EF26066DF0009B8BD2 /* TableView */,
 				809BACDA26013CF600D975A1 /* CustomButtonViewController.swift */,
 			);
 			path = ComponentViewControllers;
@@ -244,6 +261,7 @@
 				807496C02605ACF7009B8BD2 /* UIView.storyboard in Resources */,
 				807496B62605263E009B8BD2 /* Graphic.storyboard in Resources */,
 				807496E12605BDFA009B8BD2 /* AlertandToast.storyboard in Resources */,
+				807496F526067229009B8BD2 /* TableView.storyboard in Resources */,
 				809BACA02601194D00D975A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +276,7 @@
 				809BAC9D2601194D00D975A1 /* MainViewController.swift in Sources */,
 				807496A62605041B009B8BD2 /* CategoryData.swift in Sources */,
 				809BACDB26013CF600D975A1 /* CustomButtonViewController.swift in Sources */,
+				807496F126066E23009B8BD2 /* ExpandableTableView.swift in Sources */,
 				807496BC2605AC9A009B8BD2 /* CustomIndicatorViewController.swift in Sources */,
 				807496AD2605092B009B8BD2 /* ListData.swift in Sources */,
 				807496EA2605BF4F009B8BD2 /* Alert.swift in Sources */,
@@ -265,6 +284,7 @@
 				807496DC2605B34D009B8BD2 /* CustomIndicatorView.swift in Sources */,
 				807496AA2605079A009B8BD2 /* BaseDataModel.swift in Sources */,
 				807496E52605BE3D009B8BD2 /* CustomAlertViewController.swift in Sources */,
+				807496F826067AA9009B8BD2 /* DynamicHeightTableViewController.swift in Sources */,
 				809BAC992601194D00D975A1 /* AppDelegate.swift in Sources */,
 				807496B926052668009B8BD2 /* DrawTextViewController.swift in Sources */,
 				809BACD12601276E00D975A1 /* CategoryViewController.swift in Sources */,

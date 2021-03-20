@@ -27,36 +27,36 @@ let category = [SubCategory.init(categorySequence: 1, titleName: "UIView", listM
 
 //MARK: - 1. UIView List
 
-let uiViewListData = ListModel.init(listSequence: 1, listName: "Custom Indicator", storyboardName: "UIView", viewControllers: [customIndicatorVC])
+let uiViewListData = ListModel.init(listSequence: 1, storyboardName: "UIView", viewControllers: [customIndicatorVC])
 
 //MARK: - 2. Alert & Toast List
-let alertToastListData = ListModel.init(listSequence: 2, listName: "Custom Alert", storyboardName: "AlertandToast", viewControllers: [customAlertVC])
+let alertToastListData = ListModel.init(listSequence: 2, storyboardName: "AlertandToast", viewControllers: [customAlertVC])
 
 
 //MARK: - 3. TableView List
-let tableViewListData = ListModel.init(listSequence: 3, listName: "Component", storyboardName: "Component", viewControllers: [customButtonVC])
+let tableViewListData = ListModel.init(listSequence: 3, storyboardName: "TableView", viewControllers: [expandableTableVC, dynamicHeightTableVC])
 
 
 //MARK: - 4. Component List
-let componentListData = ListModel.init(listSequence: 4, listName: "Custom Button", storyboardName: "Component", viewControllers: [customButtonVC])
+let componentListData = ListModel.init(listSequence: 4, storyboardName: "Component", viewControllers: [customButtonVC])
 
 
 //MARK: - 5. WebView List
-let webviewListData = ListModel.init(listSequence: 5, listName: "Component", storyboardName: "Component", viewControllers: [customButtonVC])
+let webviewListData = ListModel.init(listSequence: 5, storyboardName: "Component", viewControllers: [customButtonVC])
 
 
 //MARK: - 6. DataBase List
-let dataBaseListData = ListModel.init(listSequence: 6, listName: "Component", storyboardName: "Component", viewControllers: [customButtonVC])
+let dataBaseListData = ListModel.init(listSequence: 6, storyboardName: "Component", viewControllers: [customButtonVC])
 
 
 //MARK: - 7. Graphic List
-let graphicListData = ListModel.init(listSequence: 7, listName: "Draw Text", storyboardName: "Graphic", viewControllers: [drawTextVC])
+let graphicListData = ListModel.init(listSequence: 7, storyboardName: "Graphic", viewControllers: [drawTextVC])
 
 
 
 //MARK: - 8. Api Connection List
-let apiConnectionListData = ListModel.init(listSequence: 8, listName: "Component", storyboardName: "Component", viewControllers: [customButtonVC])
+let apiConnectionListData = ListModel.init(listSequence: 8, storyboardName: "Component", viewControllers: [customButtonVC])
 
 
 //MARK: - 9. Third Party Connection List
-let thirdPartyConnectionListData = ListModel.init(listSequence: 8, listName: "Component", storyboardName: "Component", viewControllers: [customButtonVC])
+let thirdPartyConnectionListData = ListModel.init(listSequence: 8, storyboardName: "Component", viewControllers: [customButtonVC])

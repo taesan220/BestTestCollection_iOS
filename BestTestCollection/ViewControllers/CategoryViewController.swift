@@ -23,17 +23,17 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     let cellReuseIdentifier = "subCell"
-    
+
+    var navigationBarTitle: String!
     var listModel: ListModel!
-    
+
     //var arrSubCategory: [ListModel]!
 
 //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = listModel.listName
-
+        self.navigationItem.title = navigationBarTitle
         self.subCategoryTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         print("Sub category key = \(subCategoryKey ?? "nil")")
@@ -42,7 +42,8 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         self.navigationItem.title = self.navigationTitle  //상단 타이틀 변경
     }
     
-    func setSubCategoryData(listModel: ListModel) {
+    func setSubCategoryData(title: String, listModel: ListModel) {
+        self.navigationBarTitle = title
         self.listModel = listModel
     }
 
@@ -70,7 +71,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         
 //        let viewControllerInfo: Dictionary<String, String> = identifierKey[index]
         
-        let name = listModel.listName
+        let name = self.listModel.viewControllers[index].subViewControllerName
         //subViewControllerName: "Custom Button", subViewControllerIdentifier: "custombuttonVC")
 
 

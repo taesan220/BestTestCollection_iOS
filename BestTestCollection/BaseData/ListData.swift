@@ -18,6 +18,8 @@ let customIndicatorVC = ListViewControllers.init(subViewControllerName: "Custom 
 let customAlertVC = ListViewControllers.init(subViewControllerName: "Custom Alert", subViewControllerIdentifier: "customAlertVC")
 
 //MARK: - 3. TableView List
+let expandableTableVC = ListViewControllers.init(subViewControllerName: "Expandable TableView", subViewControllerIdentifier: "expandableTableVC")
+let dynamicHeightTableVC = ListViewControllers.init(subViewControllerName: "Dynamic Height TableView", subViewControllerIdentifier: "dynamicHeightTableVC")
 
 
 //MARK: - 4. Component List

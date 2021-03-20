@@ -21,7 +21,6 @@ struct SubCategory {
  */
 struct ListModel {
     let listSequence: Int
-    let listName: String
     let storyboardName: String
     let viewControllers: [ListViewControllers]
 }

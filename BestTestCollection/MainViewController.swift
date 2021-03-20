@@ -47,7 +47,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "catetoryVC") as? CategoryViewController else { return }
         self.navigationController?.pushViewController(vc, animated: true)
-
-        vc.listModel = subCategory.listModel
+        
+        //Send selected data
+        vc.setSubCategoryData(title: subCategory.titleName, listModel: subCategory.listModel)
     }
 }
