@@ -212,5 +212,321 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "421690E9-4E7D-45C7-BC36-3988A93E9D38"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/CustomButtonViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28546C9B-7DC7-40CA-AEDF-F1FDADF4B262"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "CustomTextField"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "28546C9B-7DC7-40CA-AEDF-F1FDADF4B262 - 11e043ac685bf573"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BestTestCollection.CustomTextField.customTextFieldDelegate.getter : Swift.Optional&lt;BestTestCollection.CustomTextFieldDelegate&gt;"
+                  moduleName = "BestTestCollection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "28546C9B-7DC7-40CA-AEDF-F1FDADF4B262 - 677f61d900905147"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BestTestCollection.CustomTextField.customTextFieldDelegate.setter : Swift.Optional&lt;BestTestCollection.CustomTextFieldDelegate&gt;"
+                  moduleName = "BestTestCollection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "28546C9B-7DC7-40CA-AEDF-F1FDADF4B262 - 6283178fc3154e27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BestTestCollection.CustomTextField.customTextFieldDelegate.modify : Swift.Optional&lt;BestTestCollection.CustomTextFieldDelegate&gt;"
+                  moduleName = "BestTestCollection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "28546C9B-7DC7-40CA-AEDF-F1FDADF4B262 - 77ff8187027d691"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BestTestCollection.CustomTextField.customTextFieldDelegate.modify : Swift.Optional&lt;BestTestCollection.CustomTextFieldDelegate&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BestTestCollection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64798CAA-2B80-4EF1-946E-15C8BF869337"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "CustomTextFieldDelegate"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25444197-1986-4552-BA26-89A6C8FAF674"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "CustomTextField"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "25444197-1986-4552-BA26-89A6C8FAF674 - e4ee1c44e95c284c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BestTestCollection.CustomTextField.isMaxLengthCustomized.getter : Swift.Bool"
+                  moduleName = "BestTestCollection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "25444197-1986-4552-BA26-89A6C8FAF674 - d484687fd48bc050"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BestTestCollection.CustomTextField.isMaxLengthCustomized.setter : Swift.Bool"
+                  moduleName = "BestTestCollection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "25444197-1986-4552-BA26-89A6C8FAF674 - 96dacc0a8b5dfd16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BestTestCollection.CustomTextField.isMaxLengthCustomized.modify : Swift.Bool"
+                  moduleName = "BestTestCollection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "25444197-1986-4552-BA26-89A6C8FAF674 - 79b46b316f7fdeb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BestTestCollection.CustomTextField.isMaxLengthCustomized.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BestTestCollection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FD00CDE-4C74-49B9-B477-9FC0BACD745A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "textFieldDidBeginEditing(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C1EC4B4-00BA-4CFB-870A-7FFC16DFE4E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "textFieldDidEndEditing(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9574540-AB33-4738-AACE-5EC75048553C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CustomButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECC0E4E9-7442-4096-8E4C-E170B8480283"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CustomButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "pressesEnd(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E9895D0-DE70-469B-852C-E86C2A18A505"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CustomButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "pressesEnd(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23229816-ABFA-438B-8D16-48EF32E5A301"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CustomButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "setButtonEnable(isEnable:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BB405DA-1305-4149-9F07-3B16C7D677FD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CustomButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "isEnabled"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E50846A-1A4C-4594-9F74-A8F450868AD9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestTestCollection/ViewControllers/ComponentViewControllers/Component/CustomButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "highLightColor"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

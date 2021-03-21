@@ -23,8 +23,8 @@ let dynamicHeightTableVC = ListViewControllers.init(subViewControllerName: "Dyna
 
 
 //MARK: - 4. Component List
-let customButtonVC = ListViewControllers.init(subViewControllerName: "Custom Button", subViewControllerIdentifier: "custombuttonVC")
-
+let customButtonVC = ListViewControllers.init(subViewControllerName: "Custom Button", subViewControllerIdentifier: "customButtonVC")
+let customTextFieldVC = ListViewControllers.init(subViewControllerName: "Custom TextField", subViewControllerIdentifier: "customTextFieldVC")
 
 //MARK: - 5. WebView List
 

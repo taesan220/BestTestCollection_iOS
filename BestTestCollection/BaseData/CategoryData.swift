@@ -38,7 +38,7 @@ let tableViewListData = ListModel.init(listSequence: 3, storyboardName: "TableVi
 
 
 //MARK: - 4. Component List
-let componentListData = ListModel.init(listSequence: 4, storyboardName: "Component", viewControllers: [customButtonVC])
+let componentListData = ListModel.init(listSequence: 4, storyboardName: "Component", viewControllers: [customButtonVC, customTextFieldVC])
 
 
 //MARK: - 5. WebView List

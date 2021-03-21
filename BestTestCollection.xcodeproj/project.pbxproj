@@ -22,6 +22,9 @@
 		807496F126066E23009B8BD2 /* ExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496F026066E23009B8BD2 /* ExpandableTableView.swift */; };
 		807496F526067229009B8BD2 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807496F426067229009B8BD2 /* TableView.storyboard */; };
 		807496F826067AA9009B8BD2 /* DynamicHeightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496F726067AA9009B8BD2 /* DynamicHeightTableViewController.swift */; };
+		80956DA22606F89A00E03E79 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80956DA12606F89A00E03E79 /* CustomButton.swift */; };
+		80956DA62607562000E03E79 /* CusomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80956DA52607561F00E03E79 /* CusomTextField.swift */; };
+		80956DA9260756DD00E03E79 /* CustomTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80956DA8260756DD00E03E79 /* CustomTextFieldViewController.swift */; };
 		809BAC992601194D00D975A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BAC982601194D00D975A1 /* AppDelegate.swift */; };
 		809BAC9D2601194D00D975A1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BAC9C2601194D00D975A1 /* MainViewController.swift */; };
 		809BACA02601194D00D975A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809BAC9E2601194D00D975A1 /* Main.storyboard */; };
@@ -48,6 +51,9 @@
 		807496F026066E23009B8BD2 /* ExpandableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableView.swift; sourceTree = "<group>"; };
 		807496F426067229009B8BD2 /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
 		807496F726067AA9009B8BD2 /* DynamicHeightTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTableViewController.swift; sourceTree = "<group>"; };
+		80956DA12606F89A00E03E79 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		80956DA52607561F00E03E79 /* CusomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CusomTextField.swift; sourceTree = "<group>"; };
+		80956DA8260756DD00E03E79 /* CustomTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldViewController.swift; sourceTree = "<group>"; };
 		809BAC952601194D00D975A1 /* BestTestCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestTestCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809BAC982601194D00D975A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		809BAC9C2601194D00D975A1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,15 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		80956DA02606F87300E03E79 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				80956DA12606F89A00E03E79 /* CustomButton.swift */,
+				80956DA52607561F00E03E79 /* CusomTextField.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		809BAC8C2601194D00D975A1 = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +208,9 @@
 				807496E32605BE21009B8BD2 /* Alert & Toast */,
 				807496ED2605CA38009B8BD2 /* Graphic */,
 				807496EF26066DF0009B8BD2 /* TableView */,
+				80956DA02606F87300E03E79 /* Component */,
 				809BACDA26013CF600D975A1 /* CustomButtonViewController.swift */,
+				80956DA8260756DD00E03E79 /* CustomTextFieldViewController.swift */,
 			);
 			path = ComponentViewControllers;
 			sourceTree = "<group>";
@@ -277,6 +294,8 @@
 				807496A62605041B009B8BD2 /* CategoryData.swift in Sources */,
 				809BACDB26013CF600D975A1 /* CustomButtonViewController.swift in Sources */,
 				807496F126066E23009B8BD2 /* ExpandableTableView.swift in Sources */,
+				80956DA22606F89A00E03E79 /* CustomButton.swift in Sources */,
+				80956DA9260756DD00E03E79 /* CustomTextFieldViewController.swift in Sources */,
 				807496BC2605AC9A009B8BD2 /* CustomIndicatorViewController.swift in Sources */,
 				807496AD2605092B009B8BD2 /* ListData.swift in Sources */,
 				807496EA2605BF4F009B8BD2 /* Alert.swift in Sources */,
@@ -284,6 +303,7 @@
 				807496DC2605B34D009B8BD2 /* CustomIndicatorView.swift in Sources */,
 				807496AA2605079A009B8BD2 /* BaseDataModel.swift in Sources */,
 				807496E52605BE3D009B8BD2 /* CustomAlertViewController.swift in Sources */,
+				80956DA62607562000E03E79 /* CusomTextField.swift in Sources */,
 				807496F826067AA9009B8BD2 /* DynamicHeightTableViewController.swift in Sources */,
 				809BAC992601194D00D975A1 /* AppDelegate.swift in Sources */,
 				807496B926052668009B8BD2 /* DrawTextViewController.swift in Sources */,

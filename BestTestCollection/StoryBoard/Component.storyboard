@@ -12,22 +12,165 @@
         <!--Custom Button View Controller-->
         <scene sceneID="5mJ-Dz-yS8">
             <objects>
-                <viewController storyboardIdentifier="custombuttonVC" id="dVZ-fs-hrQ" customClass="CustomButtonViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="customButtonVC" id="dVZ-fs-hrQ" customClass="CustomButtonViewController" customModule="BestTestCollection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v06-7l-jj6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etg-Hx-Gma">
+                                <rect key="frame" x="30" y="115" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XfZ-bD-Ibg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" image="btn_play"/>
+                                <state key="highlighted" image="btn_play_highlighted"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set HightLight in Storyboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvf-gk-cV2">
+                                <rect key="frame" x="30" y="84" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CustomButton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-QV-ENu">
+                                <rect key="frame" x="30" y="185" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRN-bs-w7U" customClass="CustomButton" customModule="BestTestCollection" customModuleProvider="target">
+                                <rect key="frame" x="30" y="216" width="354" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.76464744220000003" blue="0.1207590025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AM4-yN-7n8"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBlockableButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBlockColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textBlockButtonColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highLightColor">
+                                        <color key="value" red="0.68547747461928943" green="0.5400555139731088" blue="0.26094560833815245" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button:" destination="4HN-9S-IsL" eventType="touchUpInside" id="ngJ-cM-acG"/>
+                                    <action selector="customButtonPressed:" destination="dVZ-fs-hrQ" eventType="touchUpInside" id="sC2-nx-y9b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htg-uR-y93">
+                                <rect key="frame" x="30" y="260" width="354" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rV2-ZE-253"/>
+                                </constraints>
+                                <state key="normal" title="cancel Enable False"/>
+                                <connections>
+                                    <action selector="cencelEnableFalseButtonPressed:" destination="dVZ-fs-hrQ" eventType="touchUpInside" id="wXQ-IU-ij3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xB6-Sq-Htc"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hVC-QV-ENu" firstAttribute="top" secondItem="Etg-Hx-Gma" secondAttribute="bottom" constant="30" id="2QV-Zj-lZK"/>
+                            <constraint firstItem="htg-uR-y93" firstAttribute="trailing" secondItem="QRN-bs-w7U" secondAttribute="trailing" id="8Oa-u5-72z"/>
+                            <constraint firstItem="xB6-Sq-Htc" firstAttribute="trailing" secondItem="hVC-QV-ENu" secondAttribute="trailing" constant="30" id="Cdn-9e-tp5"/>
+                            <constraint firstItem="jvf-gk-cV2" firstAttribute="top" secondItem="xB6-Sq-Htc" secondAttribute="top" constant="40" id="FUk-H3-J7D"/>
+                            <constraint firstItem="htg-uR-y93" firstAttribute="leading" secondItem="QRN-bs-w7U" secondAttribute="leading" id="GXK-aR-7I4"/>
+                            <constraint firstItem="hVC-QV-ENu" firstAttribute="leading" secondItem="xB6-Sq-Htc" secondAttribute="leading" constant="30" id="H8D-HK-NvE"/>
+                            <constraint firstItem="Etg-Hx-Gma" firstAttribute="centerX" secondItem="v06-7l-jj6" secondAttribute="centerX" id="Kv3-Yk-mbv"/>
+                            <constraint firstItem="QRN-bs-w7U" firstAttribute="top" secondItem="hVC-QV-ENu" secondAttribute="bottom" constant="10" id="MtT-9S-JHy"/>
+                            <constraint firstItem="QRN-bs-w7U" firstAttribute="leading" secondItem="hVC-QV-ENu" secondAttribute="leading" id="Sxg-rf-6a7"/>
+                            <constraint firstItem="Etg-Hx-Gma" firstAttribute="leading" secondItem="xB6-Sq-Htc" secondAttribute="leading" constant="30" id="Yjl-UZ-hiJ"/>
+                            <constraint firstItem="xB6-Sq-Htc" firstAttribute="trailing" secondItem="jvf-gk-cV2" secondAttribute="trailing" constant="30" id="ZLm-Md-iYc"/>
+                            <constraint firstItem="Etg-Hx-Gma" firstAttribute="top" secondItem="jvf-gk-cV2" secondAttribute="bottom" constant="10" id="iZK-vR-bge"/>
+                            <constraint firstItem="jvf-gk-cV2" firstAttribute="leading" secondItem="xB6-Sq-Htc" secondAttribute="leading" constant="30" id="ly9-tU-AbT"/>
+                            <constraint firstItem="xB6-Sq-Htc" firstAttribute="trailing" secondItem="Etg-Hx-Gma" secondAttribute="trailing" constant="30" id="tFy-x4-kwI"/>
+                            <constraint firstItem="htg-uR-y93" firstAttribute="top" secondItem="QRN-bs-w7U" secondAttribute="bottom" constant="4" id="tKy-IQ-zQA"/>
+                            <constraint firstItem="QRN-bs-w7U" firstAttribute="trailing" secondItem="hVC-QV-ENu" secondAttribute="trailing" id="ubD-PM-fth"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="customButton" destination="QRN-bs-w7U" id="jBv-ku-O64"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLp-KJ-tY1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4HN-9S-IsL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="225" y="126"/>
+            <point key="canvasLocation" x="224.63768115942031" y="125.89285714285714"/>
+        </scene>
+        <!--Custom Text Field View Controller-->
+        <scene sceneID="kHq-I2-9nT">
+            <objects>
+                <viewController storyboardIdentifier="customTextFieldVC" id="Zbj-6H-ojd" customClass="CustomTextFieldViewController" customModule="BestTestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L3B-JG-Kto">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom TextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAl-uH-Y3u">
+                                <rect key="frame" x="30" y="84" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ohx-Mq-yJa" customClass="CustomTextField" customModule="BestTestCollection" customModuleProvider="target">
+                                <rect key="frame" x="30" y="125" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLevel.textColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0.5"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="focusBorderColor">
+                                        <color key="value" systemColor="systemRedColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KQf-Th-p6P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ohx-Mq-yJa" firstAttribute="leading" secondItem="DAl-uH-Y3u" secondAttribute="leading" id="EUr-2c-VUz"/>
+                            <constraint firstItem="KQf-Th-p6P" firstAttribute="trailing" secondItem="DAl-uH-Y3u" secondAttribute="trailing" constant="30" id="JNA-VN-8gu"/>
+                            <constraint firstItem="Ohx-Mq-yJa" firstAttribute="trailing" secondItem="DAl-uH-Y3u" secondAttribute="trailing" id="eZO-lT-IH0"/>
+                            <constraint firstItem="Ohx-Mq-yJa" firstAttribute="top" secondItem="DAl-uH-Y3u" secondAttribute="bottom" constant="20" id="em1-6k-9F2"/>
+                            <constraint firstItem="DAl-uH-Y3u" firstAttribute="leading" secondItem="KQf-Th-p6P" secondAttribute="leading" constant="30" id="l63-2x-XVG"/>
+                            <constraint firstItem="DAl-uH-Y3u" firstAttribute="top" secondItem="KQf-Th-p6P" secondAttribute="top" constant="40" id="zJc-Yb-aS6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="L3B-JG-Kto" id="jnc-9Z-Tj0"/>
+                        <outlet property="customTextField" destination="Ohx-Mq-yJa" id="htl-DJ-NcK"/>
+                        <outlet property="view" destination="L3B-JG-Kto" id="KqI-aC-jaq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmK-jH-Ucd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="126"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="btn_play" width="50" height="34.333332061767578"/>
+        <image name="btn_play_highlighted" width="50" height="34.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
