@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,18 +15,58 @@
                     <view key="view" contentMode="scaleToFill" id="3x5-zt-YgG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fqK-bY-Vvg">
+                                <rect key="frame" x="30" y="74" width="354" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="kZy-u8-PfC"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-04-wEs">
+                                <rect key="frame" x="30" y="240" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZm-PI-tjl">
+                                <rect key="frame" x="30" y="209" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2K-wR-Mky">
+                                <rect key="frame" x="30" y="294" width="354" height="30"/>
+                                <state key="normal" title="Change text to image"/>
+                                <connections>
+                                    <action selector="changeTextToImageButtonPressed:" destination="KIJ-2G-obR" eventType="touchUpInside" id="5e3-xA-vLY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gpH-zw-mYu"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gpH-zw-mYu" firstAttribute="trailing" secondItem="pZm-PI-tjl" secondAttribute="trailing" constant="30" id="0kX-QE-XVs"/>
+                            <constraint firstItem="TfZ-04-wEs" firstAttribute="leading" secondItem="gpH-zw-mYu" secondAttribute="leading" constant="30" id="3Hz-VM-B4A"/>
+                            <constraint firstItem="TfZ-04-wEs" firstAttribute="top" secondItem="pZm-PI-tjl" secondAttribute="bottom" constant="10" id="4gE-mP-w9S"/>
+                            <constraint firstItem="fqK-bY-Vvg" firstAttribute="top" secondItem="gpH-zw-mYu" secondAttribute="top" constant="30" id="6NC-bi-eCX"/>
+                            <constraint firstItem="fqK-bY-Vvg" firstAttribute="leading" secondItem="gpH-zw-mYu" secondAttribute="leading" constant="30" id="9XA-co-5ur"/>
+                            <constraint firstItem="gpH-zw-mYu" firstAttribute="trailing" secondItem="TfZ-04-wEs" secondAttribute="trailing" constant="30" id="FbV-mK-wc0"/>
+                            <constraint firstItem="gpH-zw-mYu" firstAttribute="trailing" secondItem="fqK-bY-Vvg" secondAttribute="trailing" constant="30" id="Jvf-Kj-yif"/>
+                            <constraint firstItem="pZm-PI-tjl" firstAttribute="leading" secondItem="gpH-zw-mYu" secondAttribute="leading" constant="30" id="NVm-Aw-1ff"/>
+                            <constraint firstItem="D2K-wR-Mky" firstAttribute="top" secondItem="TfZ-04-wEs" secondAttribute="bottom" constant="20" id="NYn-hy-IgQ"/>
+                            <constraint firstItem="pZm-PI-tjl" firstAttribute="top" secondItem="fqK-bY-Vvg" secondAttribute="bottom" constant="15" id="Ozv-uo-Fux"/>
+                            <constraint firstItem="D2K-wR-Mky" firstAttribute="trailing" secondItem="TfZ-04-wEs" secondAttribute="trailing" id="PIN-sh-YYD"/>
+                            <constraint firstItem="D2K-wR-Mky" firstAttribute="leading" secondItem="TfZ-04-wEs" secondAttribute="leading" id="oIO-mQ-v6U"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnChangeTextToImae" destination="D2K-wR-Mky" id="oIf-Mj-Uto"/>
+                        <outlet property="imageView" destination="fqK-bY-Vvg" id="QRC-OZ-nee"/>
+                        <outlet property="tfText" destination="TfZ-04-wEs" id="r45-ZJ-v0W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtf-a6-Hp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="225" y="126"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

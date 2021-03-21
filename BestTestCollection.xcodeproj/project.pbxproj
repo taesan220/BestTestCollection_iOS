@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800EB06D2607B278002313BB /* ScreetKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800EB06B2607B278002313BB /* ScreetKeyView.swift */; };
+		800EB06E2607B278002313BB /* ScreetKeyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800EB06C2607B278002313BB /* ScreetKeyView.xib */; };
+		800EB0712607B359002313BB /* ScreetKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800EB0702607B359002313BB /* ScreetKeyViewController.swift */; };
+		800EB0762607B8C1002313BB /* ImageScreetKeyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800EB0742607B8C1002313BB /* ImageScreetKeyView.xib */; };
+		800EB0772607B8C1002313BB /* ImageScreetKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800EB0752607B8C1002313BB /* ImageScreetKeyView.swift */; };
+		800EB07E2607C0A5002313BB /* DrawScreetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800EB07D2607C0A5002313BB /* DrawScreetKey.swift */; };
 		807496A62605041B009B8BD2 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496A52605041B009B8BD2 /* CategoryData.swift */; };
 		807496AA2605079A009B8BD2 /* BaseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496A92605079A009B8BD2 /* BaseDataModel.swift */; };
 		807496AD2605092B009B8BD2 /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496AC2605092B009B8BD2 /* ListData.swift */; };
@@ -36,6 +42,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		800EB06B2607B278002313BB /* ScreetKeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreetKeyView.swift; sourceTree = "<group>"; };
+		800EB06C2607B278002313BB /* ScreetKeyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreetKeyView.xib; sourceTree = "<group>"; };
+		800EB0702607B359002313BB /* ScreetKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreetKeyViewController.swift; sourceTree = "<group>"; };
+		800EB0742607B8C1002313BB /* ImageScreetKeyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageScreetKeyView.xib; sourceTree = "<group>"; };
+		800EB0752607B8C1002313BB /* ImageScreetKeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScreetKeyView.swift; sourceTree = "<group>"; };
+		800EB07D2607C0A5002313BB /* DrawScreetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawScreetKey.swift; sourceTree = "<group>"; };
 		807496A52605041B009B8BD2 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		807496A92605079A009B8BD2 /* BaseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataModel.swift; sourceTree = "<group>"; };
 		807496AC2605092B009B8BD2 /* ListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
@@ -77,6 +89,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		800EB0672607A645002313BB /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				800EB0732607B89C002313BB /* ImageScreetKeyView */,
+				800EB06A2607B25C002313BB /* TextScreetKeyView */,
+				80956DA12606F89A00E03E79 /* CustomButton.swift */,
+				80956DA52607561F00E03E79 /* CusomTextField.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		800EB06A2607B25C002313BB /* TextScreetKeyView */ = {
+			isa = PBXGroup;
+			children = (
+				800EB06B2607B278002313BB /* ScreetKeyView.swift */,
+				800EB06C2607B278002313BB /* ScreetKeyView.xib */,
+			);
+			path = TextScreetKeyView;
+			sourceTree = "<group>";
+		};
+		800EB0732607B89C002313BB /* ImageScreetKeyView */ = {
+			isa = PBXGroup;
+			children = (
+				800EB07D2607C0A5002313BB /* DrawScreetKey.swift */,
+				800EB0752607B8C1002313BB /* ImageScreetKeyView.swift */,
+				800EB0742607B8C1002313BB /* ImageScreetKeyView.xib */,
+			);
+			path = ImageScreetKeyView;
+			sourceTree = "<group>";
+		};
 		807496A426050404009B8BD2 /* BaseData */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,8 +184,10 @@
 		80956DA02606F87300E03E79 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				80956DA12606F89A00E03E79 /* CustomButton.swift */,
-				80956DA52607561F00E03E79 /* CusomTextField.swift */,
+				800EB0672607A645002313BB /* Component */,
+				809BACDA26013CF600D975A1 /* CustomButtonViewController.swift */,
+				80956DA8260756DD00E03E79 /* CustomTextFieldViewController.swift */,
+				800EB0702607B359002313BB /* ScreetKeyViewController.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -209,8 +253,6 @@
 				807496ED2605CA38009B8BD2 /* Graphic */,
 				807496EF26066DF0009B8BD2 /* TableView */,
 				80956DA02606F87300E03E79 /* Component */,
-				809BACDA26013CF600D975A1 /* CustomButtonViewController.swift */,
-				80956DA8260756DD00E03E79 /* CustomTextFieldViewController.swift */,
 			);
 			path = ComponentViewControllers;
 			sourceTree = "<group>";
@@ -280,6 +322,8 @@
 				807496E12605BDFA009B8BD2 /* AlertandToast.storyboard in Resources */,
 				807496F526067229009B8BD2 /* TableView.storyboard in Resources */,
 				809BACA02601194D00D975A1 /* Main.storyboard in Resources */,
+				800EB0762607B8C1002313BB /* ImageScreetKeyView.xib in Resources */,
+				800EB06E2607B278002313BB /* ScreetKeyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +339,7 @@
 				809BACDB26013CF600D975A1 /* CustomButtonViewController.swift in Sources */,
 				807496F126066E23009B8BD2 /* ExpandableTableView.swift in Sources */,
 				80956DA22606F89A00E03E79 /* CustomButton.swift in Sources */,
+				800EB06D2607B278002313BB /* ScreetKeyView.swift in Sources */,
 				80956DA9260756DD00E03E79 /* CustomTextFieldViewController.swift in Sources */,
 				807496BC2605AC9A009B8BD2 /* CustomIndicatorViewController.swift in Sources */,
 				807496AD2605092B009B8BD2 /* ListData.swift in Sources */,
@@ -302,11 +347,14 @@
 				807496C32605AE01009B8BD2 /* Setting.swift in Sources */,
 				807496DC2605B34D009B8BD2 /* CustomIndicatorView.swift in Sources */,
 				807496AA2605079A009B8BD2 /* BaseDataModel.swift in Sources */,
+				800EB07E2607C0A5002313BB /* DrawScreetKey.swift in Sources */,
 				807496E52605BE3D009B8BD2 /* CustomAlertViewController.swift in Sources */,
+				800EB0772607B8C1002313BB /* ImageScreetKeyView.swift in Sources */,
 				80956DA62607562000E03E79 /* CusomTextField.swift in Sources */,
 				807496F826067AA9009B8BD2 /* DynamicHeightTableViewController.swift in Sources */,
 				809BAC992601194D00D975A1 /* AppDelegate.swift in Sources */,
 				807496B926052668009B8BD2 /* DrawTextViewController.swift in Sources */,
+				800EB0712607B359002313BB /* ScreetKeyViewController.swift in Sources */,
 				809BACD12601276E00D975A1 /* CategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

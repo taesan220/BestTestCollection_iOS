@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScreetKeyView" customModule="BestTestCollection" customModuleProvider="target">
+            <connections>
+                <outlet property="btnScreetNumberRefresh" destination="TPc-tc-hoD" id="tZM-Pc-kJP"/>
+                <outlet property="lbScreetNumber" destination="usl-MC-xMk" id="13w-1n-rFy"/>
+                <outlet property="tfScreetNumber" destination="2ys-we-f6g" id="4iG-fi-O2U"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pu4-5C-76F">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPc-tc-hoD">
+                            <rect key="frame" x="284" y="51" width="100" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="uyv-9H-1SM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="새로고침"/>
+                            <connections>
+                                <action selector="refreshButtonPressed:" destination="-1" eventType="touchUpInside" id="rL7-Lt-rSd"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ys-we-f6g" customClass="CustomTextField" customModule="BestTestCollection" customModuleProvider="target">
+                            <rect key="frame" x="30" y="101" width="354" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="RoP-bI-oLk"/>
+                            </constraints>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0.5"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="focusBorderColor">
+                                    <color key="value" red="0.0" green="0.4708557129" blue="0.99937242270000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usl-MC-xMk">
+                            <rect key="frame" x="30" y="51" width="244" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="MxI-5t-OTd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0.5"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="보안문자 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nru-bk-W53">
+                            <rect key="frame" x="30" y="7" width="82" height="37"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94900685549999997" green="0.94902497529999996" blue="0.94901126619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="nru-bk-W53" firstAttribute="leading" secondItem="Pu4-5C-76F" secondAttribute="leading" constant="30" id="5PP-sY-Sgb"/>
+                        <constraint firstItem="usl-MC-xMk" firstAttribute="leading" secondItem="Pu4-5C-76F" secondAttribute="leading" constant="30" id="88h-2u-B2i"/>
+                        <constraint firstItem="nru-bk-W53" firstAttribute="top" secondItem="Pu4-5C-76F" secondAttribute="top" constant="7" id="8xB-s2-9MP"/>
+                        <constraint firstItem="2ys-we-f6g" firstAttribute="top" secondItem="usl-MC-xMk" secondAttribute="bottom" constant="10" id="DzA-cP-O7O"/>
+                        <constraint firstAttribute="bottom" secondItem="2ys-we-f6g" secondAttribute="bottom" constant="10" id="MVb-e1-e7H"/>
+                        <constraint firstItem="TPc-tc-hoD" firstAttribute="leading" secondItem="usl-MC-xMk" secondAttribute="trailing" constant="10" id="THf-fo-U3o"/>
+                        <constraint firstItem="2ys-we-f6g" firstAttribute="leading" secondItem="usl-MC-xMk" secondAttribute="leading" id="U5Q-ii-x89"/>
+                        <constraint firstItem="usl-MC-xMk" firstAttribute="top" secondItem="nru-bk-W53" secondAttribute="bottom" constant="7" id="V7o-Y3-WkL"/>
+                        <constraint firstItem="TPc-tc-hoD" firstAttribute="trailing" secondItem="2ys-we-f6g" secondAttribute="trailing" id="eI8-4B-bP9"/>
+                        <constraint firstItem="TPc-tc-hoD" firstAttribute="bottom" secondItem="usl-MC-xMk" secondAttribute="bottom" id="f1i-zw-55R"/>
+                        <constraint firstItem="TPc-tc-hoD" firstAttribute="centerY" secondItem="usl-MC-xMk" secondAttribute="centerY" id="ivn-ME-EB0"/>
+                        <constraint firstAttribute="trailing" secondItem="TPc-tc-hoD" secondAttribute="trailing" constant="30" id="ltA-Tv-32d"/>
+                        <constraint firstItem="TPc-tc-hoD" firstAttribute="top" secondItem="usl-MC-xMk" secondAttribute="top" id="mm5-Sp-Aq6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Pu4-5C-76F" secondAttribute="bottom" id="1CV-N6-HNS"/>
+                <constraint firstAttribute="trailing" secondItem="Pu4-5C-76F" secondAttribute="trailing" id="Rfg-Ie-y5E"/>
+                <constraint firstItem="Pu4-5C-76F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gAi-mQ-68T"/>
+                <constraint firstItem="Pu4-5C-76F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gWR-hu-GYf"/>
+                <constraint firstItem="Pu4-5C-76F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kCK-8p-dlV"/>
+                <constraint firstItem="Pu4-5C-76F" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qQh-zP-W8p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-28.985507246376812" y="87.388392857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

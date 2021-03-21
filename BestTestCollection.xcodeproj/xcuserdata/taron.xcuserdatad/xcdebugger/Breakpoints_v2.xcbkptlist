@@ -242,68 +242,6 @@
             endingLineNumber = "17"
             landmarkName = "CustomTextField"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "28546C9B-7DC7-40CA-AEDF-F1FDADF4B262 - 11e043ac685bf573"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BestTestCollection.CustomTextField.customTextFieldDelegate.getter : Swift.Optional&lt;BestTestCollection.CustomTextFieldDelegate&gt;"
-                  moduleName = "BestTestCollection"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "104">
-               </Location>
-               <Location
-                  uuid = "28546C9B-7DC7-40CA-AEDF-F1FDADF4B262 - 677f61d900905147"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BestTestCollection.CustomTextField.customTextFieldDelegate.setter : Swift.Optional&lt;BestTestCollection.CustomTextFieldDelegate&gt;"
-                  moduleName = "BestTestCollection"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "28546C9B-7DC7-40CA-AEDF-F1FDADF4B262 - 6283178fc3154e27"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BestTestCollection.CustomTextField.customTextFieldDelegate.modify : Swift.Optional&lt;BestTestCollection.CustomTextFieldDelegate&gt;"
-                  moduleName = "BestTestCollection"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "28546C9B-7DC7-40CA-AEDF-F1FDADF4B262 - 77ff8187027d691"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BestTestCollection.CustomTextField.customTextFieldDelegate.modify : Swift.Optional&lt;BestTestCollection.CustomTextFieldDelegate&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "BestTestCollection"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "8">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -336,68 +274,6 @@
             endingLineNumber = "25"
             landmarkName = "CustomTextField"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "25444197-1986-4552-BA26-89A6C8FAF674 - e4ee1c44e95c284c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BestTestCollection.CustomTextField.isMaxLengthCustomized.getter : Swift.Bool"
-                  moduleName = "BestTestCollection"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "100">
-               </Location>
-               <Location
-                  uuid = "25444197-1986-4552-BA26-89A6C8FAF674 - d484687fd48bc050"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BestTestCollection.CustomTextField.isMaxLengthCustomized.setter : Swift.Bool"
-                  moduleName = "BestTestCollection"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  uuid = "25444197-1986-4552-BA26-89A6C8FAF674 - 96dacc0a8b5dfd16"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BestTestCollection.CustomTextField.isMaxLengthCustomized.modify : Swift.Bool"
-                  moduleName = "BestTestCollection"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "25444197-1986-4552-BA26-89A6C8FAF674 - 79b46b316f7fdeb9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BestTestCollection.CustomTextField.isMaxLengthCustomized.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "BestTestCollection"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/taron/Documents/IOS_Work_Space/BestTestCollection_iOS/BestTestCollection/ViewControllers/ComponentViewControllers/Component/CusomTextField.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "8">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
