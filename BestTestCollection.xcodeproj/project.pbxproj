@@ -28,6 +28,14 @@
 		807496F126066E23009B8BD2 /* ExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496F026066E23009B8BD2 /* ExpandableTableView.swift */; };
 		807496F526067229009B8BD2 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807496F426067229009B8BD2 /* TableView.storyboard */; };
 		807496F826067AA9009B8BD2 /* DynamicHeightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807496F726067AA9009B8BD2 /* DynamicHeightTableViewController.swift */; };
+		8086CF852608C0EC0014DB31 /* DataBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086CF842608C0EC0014DB31 /* DataBaseViewController.swift */; };
+		8086CF892608C0FB0014DB31 /* DataBase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8086CF882608C0FB0014DB31 /* DataBase.storyboard */; };
+		8086CF8C2608C76A0014DB31 /* SQLiteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086CF8B2608C76A0014DB31 /* SQLiteBase.swift */; };
+		8086CF8F2608C9EC0014DB31 /* DataBaseTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086CF8E2608C9EC0014DB31 /* DataBaseTable.swift */; };
+		8086CF932608CD650014DB31 /* DataBaseCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086CF922608CD650014DB31 /* DataBaseCenter.swift */; };
+		8086CF962608CE250014DB31 /* StudentDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086CF952608CE250014DB31 /* StudentDB.swift */; };
+		8086CF992608EC270014DB31 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8086CF982608EC270014DB31 /* WebView.storyboard */; };
+		8086CF9E2608EC630014DB31 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086CF9D2608EC630014DB31 /* WebViewViewController.swift */; };
 		80956DA22606F89A00E03E79 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80956DA12606F89A00E03E79 /* CustomButton.swift */; };
 		80956DA62607562000E03E79 /* CusomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80956DA52607561F00E03E79 /* CusomTextField.swift */; };
 		80956DA9260756DD00E03E79 /* CustomTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80956DA8260756DD00E03E79 /* CustomTextFieldViewController.swift */; };
@@ -63,6 +71,14 @@
 		807496F026066E23009B8BD2 /* ExpandableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableView.swift; sourceTree = "<group>"; };
 		807496F426067229009B8BD2 /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
 		807496F726067AA9009B8BD2 /* DynamicHeightTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTableViewController.swift; sourceTree = "<group>"; };
+		8086CF842608C0EC0014DB31 /* DataBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseViewController.swift; sourceTree = "<group>"; };
+		8086CF882608C0FB0014DB31 /* DataBase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DataBase.storyboard; sourceTree = "<group>"; };
+		8086CF8B2608C76A0014DB31 /* SQLiteBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteBase.swift; sourceTree = "<group>"; };
+		8086CF8E2608C9EC0014DB31 /* DataBaseTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseTable.swift; sourceTree = "<group>"; };
+		8086CF922608CD650014DB31 /* DataBaseCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseCenter.swift; sourceTree = "<group>"; };
+		8086CF952608CE250014DB31 /* StudentDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDB.swift; sourceTree = "<group>"; };
+		8086CF982608EC270014DB31 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		8086CF9D2608EC630014DB31 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		80956DA12606F89A00E03E79 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		80956DA52607561F00E03E79 /* CusomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CusomTextField.swift; sourceTree = "<group>"; };
 		80956DA8260756DD00E03E79 /* CustomTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +197,34 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		8086CF822608C0AE0014DB31 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				8086CF832608C0C00014DB31 /* SQLite */,
+				8086CF842608C0EC0014DB31 /* DataBaseViewController.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		8086CF832608C0C00014DB31 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				8086CF8B2608C76A0014DB31 /* SQLiteBase.swift */,
+				8086CF8E2608C9EC0014DB31 /* DataBaseTable.swift */,
+				8086CF922608CD650014DB31 /* DataBaseCenter.swift */,
+				8086CF952608CE250014DB31 /* StudentDB.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		8086CF9B2608EC2E0014DB31 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				8086CF9D2608EC630014DB31 /* WebViewViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		80956DA02606F87300E03E79 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +285,8 @@
 				809BACD626012C9D00D975A1 /* Component.storyboard */,
 				807496B52605263E009B8BD2 /* Graphic.storyboard */,
 				807496F426067229009B8BD2 /* TableView.storyboard */,
+				8086CF882608C0FB0014DB31 /* DataBase.storyboard */,
+				8086CF982608EC270014DB31 /* WebView.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -248,6 +294,8 @@
 		809BACDF26013D7A00D975A1 /* ComponentViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8086CF9B2608EC2E0014DB31 /* WebView */,
+				8086CF822608C0AE0014DB31 /* DataBase */,
 				807496D92605B319009B8BD2 /* UIView */,
 				807496E32605BE21009B8BD2 /* Alert & Toast */,
 				807496ED2605CA38009B8BD2 /* Graphic */,
@@ -315,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				809BACA52601194F00D975A1 /* LaunchScreen.storyboard in Resources */,
+				8086CF892608C0FB0014DB31 /* DataBase.storyboard in Resources */,
 				809BACA22601194F00D975A1 /* Assets.xcassets in Resources */,
 				809BACD726012C9D00D975A1 /* Component.storyboard in Resources */,
 				807496C02605ACF7009B8BD2 /* UIView.storyboard in Resources */,
@@ -323,6 +372,7 @@
 				807496F526067229009B8BD2 /* TableView.storyboard in Resources */,
 				809BACA02601194D00D975A1 /* Main.storyboard in Resources */,
 				800EB0762607B8C1002313BB /* ImageScreetKeyView.xib in Resources */,
+				8086CF992608EC270014DB31 /* WebView.storyboard in Resources */,
 				800EB06E2607B278002313BB /* ScreetKeyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,19 +391,25 @@
 				80956DA22606F89A00E03E79 /* CustomButton.swift in Sources */,
 				800EB06D2607B278002313BB /* ScreetKeyView.swift in Sources */,
 				80956DA9260756DD00E03E79 /* CustomTextFieldViewController.swift in Sources */,
+				8086CF932608CD650014DB31 /* DataBaseCenter.swift in Sources */,
 				807496BC2605AC9A009B8BD2 /* CustomIndicatorViewController.swift in Sources */,
 				807496AD2605092B009B8BD2 /* ListData.swift in Sources */,
+				8086CF852608C0EC0014DB31 /* DataBaseViewController.swift in Sources */,
 				807496EA2605BF4F009B8BD2 /* Alert.swift in Sources */,
 				807496C32605AE01009B8BD2 /* Setting.swift in Sources */,
 				807496DC2605B34D009B8BD2 /* CustomIndicatorView.swift in Sources */,
+				8086CF9E2608EC630014DB31 /* WebViewViewController.swift in Sources */,
 				807496AA2605079A009B8BD2 /* BaseDataModel.swift in Sources */,
 				800EB07E2607C0A5002313BB /* DrawScreetKey.swift in Sources */,
 				807496E52605BE3D009B8BD2 /* CustomAlertViewController.swift in Sources */,
+				8086CF8C2608C76A0014DB31 /* SQLiteBase.swift in Sources */,
 				800EB0772607B8C1002313BB /* ImageScreetKeyView.swift in Sources */,
 				80956DA62607562000E03E79 /* CusomTextField.swift in Sources */,
 				807496F826067AA9009B8BD2 /* DynamicHeightTableViewController.swift in Sources */,
 				809BAC992601194D00D975A1 /* AppDelegate.swift in Sources */,
 				807496B926052668009B8BD2 /* DrawTextViewController.swift in Sources */,
+				8086CF8F2608C9EC0014DB31 /* DataBaseTable.swift in Sources */,
+				8086CF962608CE250014DB31 /* StudentDB.swift in Sources */,
 				800EB0712607B359002313BB /* ScreetKeyViewController.swift in Sources */,
 				809BACD12601276E00D975A1 /* CategoryViewController.swift in Sources */,
 			);

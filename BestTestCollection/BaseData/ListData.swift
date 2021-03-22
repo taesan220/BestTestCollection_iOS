@@ -28,9 +28,11 @@ let customTextFieldVC = ListViewControllers.init(subViewControllerName: "Custom 
 let secreetKeyVC = ListViewControllers.init(subViewControllerName: "Screet Key", subViewControllerIdentifier: "secreetKeyVC")
 
 //MARK: - 5. WebView List
-
+let webViewVC = ListViewControllers.init(subViewControllerName: "WebView UserAgent", subViewControllerIdentifier: "webViewVC")
 
 //MARK: - 6. DataBase List
+let dataBaseVC = ListViewControllers.init(subViewControllerName: "DataBase", subViewControllerIdentifier: "dataBaseVC")
+
 
 
 //MARK: - 7. Graphic List

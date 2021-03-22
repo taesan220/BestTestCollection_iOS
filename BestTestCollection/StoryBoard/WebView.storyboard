@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View View Controller-->
+        <scene sceneID="HKK-9T-Gmx">
+            <objects>
+                <viewController storyboardIdentifier="webViewVC" id="dNT-S3-CaW" customClass="WebViewViewController" customModule="BestTestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RUQ-kj-xwo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxq-uy-4sS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="115"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8i-Pt-tMb">
+                                        <rect key="frame" x="30" y="10" width="354" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.whatsmyua.info" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UdJ-JE-eUc">
+                                        <rect key="frame" x="30" y="36" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMF-7a-NZC">
+                                        <rect key="frame" x="30" y="75" width="354" height="30"/>
+                                        <state key="normal" title="Go to Web Page"/>
+                                        <connections>
+                                            <action selector="loadWebPageButtonPressed:" destination="dNT-S3-CaW" eventType="touchUpInside" id="MRM-Ay-zAV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="W8i-Pt-tMb" firstAttribute="top" secondItem="Yxq-uy-4sS" secondAttribute="top" constant="10" id="23t-mE-hjn"/>
+                                    <constraint firstAttribute="trailing" secondItem="W8i-Pt-tMb" secondAttribute="trailing" constant="30" id="327-ut-RG7"/>
+                                    <constraint firstItem="UdJ-JE-eUc" firstAttribute="leading" secondItem="W8i-Pt-tMb" secondAttribute="leading" id="5jk-S9-Th4"/>
+                                    <constraint firstItem="UdJ-JE-eUc" firstAttribute="trailing" secondItem="W8i-Pt-tMb" secondAttribute="trailing" id="AAd-VF-19M"/>
+                                    <constraint firstItem="CMF-7a-NZC" firstAttribute="top" secondItem="UdJ-JE-eUc" secondAttribute="bottom" constant="5" id="DCw-ON-nQH"/>
+                                    <constraint firstItem="UdJ-JE-eUc" firstAttribute="top" secondItem="W8i-Pt-tMb" secondAttribute="bottom" constant="5" id="LWO-2U-8zt"/>
+                                    <constraint firstAttribute="height" constant="115" id="S0x-sy-4ty"/>
+                                    <constraint firstItem="W8i-Pt-tMb" firstAttribute="leading" secondItem="Yxq-uy-4sS" secondAttribute="leading" constant="30" id="Yun-cC-S5d"/>
+                                    <constraint firstItem="CMF-7a-NZC" firstAttribute="leading" secondItem="UdJ-JE-eUc" secondAttribute="leading" id="mKK-wm-wYG"/>
+                                    <constraint firstItem="CMF-7a-NZC" firstAttribute="trailing" secondItem="UdJ-JE-eUc" secondAttribute="trailing" id="seL-sZ-5Ji"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bt7-4d-JDx">
+                                <rect key="frame" x="0.0" y="159" width="414" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zjw-u9-eVV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zjw-u9-eVV" firstAttribute="trailing" secondItem="Yxq-uy-4sS" secondAttribute="trailing" id="0Wf-Y1-k5c"/>
+                            <constraint firstItem="Bt7-4d-JDx" firstAttribute="leading" secondItem="Zjw-u9-eVV" secondAttribute="leading" id="4Sl-de-TK1"/>
+                            <constraint firstItem="Yxq-uy-4sS" firstAttribute="leading" secondItem="Zjw-u9-eVV" secondAttribute="leading" id="IeN-fk-dAi"/>
+                            <constraint firstItem="Yxq-uy-4sS" firstAttribute="top" secondItem="Zjw-u9-eVV" secondAttribute="top" id="MRb-Df-gGA"/>
+                            <constraint firstItem="Zjw-u9-eVV" firstAttribute="bottom" secondItem="Bt7-4d-JDx" secondAttribute="bottom" id="RWj-YY-0I2"/>
+                            <constraint firstItem="Bt7-4d-JDx" firstAttribute="top" secondItem="Yxq-uy-4sS" secondAttribute="bottom" id="UlA-DR-goC"/>
+                            <constraint firstItem="Zjw-u9-eVV" firstAttribute="trailing" secondItem="Bt7-4d-JDx" secondAttribute="trailing" id="hDk-gt-sFM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLoadWebPage" destination="CMF-7a-NZC" id="bC7-0a-rjy"/>
+                        <outlet property="tfAddress" destination="UdJ-JE-eUc" id="4EL-rT-k9d"/>
+                        <outlet property="webViewContainerView" destination="Bt7-4d-JDx" id="6XW-Io-ihe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alh-aF-Lka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

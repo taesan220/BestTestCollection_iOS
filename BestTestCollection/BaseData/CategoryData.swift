@@ -42,11 +42,11 @@ let componentListData = ListModel.init(listSequence: 4, storyboardName: "Compone
 
 
 //MARK: - 5. WebView List
-let webviewListData = ListModel.init(listSequence: 5, storyboardName: "Component", viewControllers: [customButtonVC])
+let webviewListData = ListModel.init(listSequence: 5, storyboardName: "WebView", viewControllers: [webViewVC])
 
 
 //MARK: - 6. DataBase List
-let dataBaseListData = ListModel.init(listSequence: 6, storyboardName: "Component", viewControllers: [customButtonVC])
+let dataBaseListData = ListModel.init(listSequence: 6, storyboardName: "DataBase", viewControllers: [dataBaseVC])
 
 
 //MARK: - 7. Graphic List
