@@ -20,7 +20,7 @@ let category = [SubCategory.init(categorySequence: 1, titleName: "UIView", listM
                 SubCategory.init(categorySequence: 5, titleName: "WebView", listModel: webviewListData),
                 SubCategory.init(categorySequence: 6, titleName: "DataBase", listModel: dataBaseListData),
                 SubCategory.init(categorySequence: 7, titleName: "Graphic", listModel: graphicListData),
-                SubCategory.init(categorySequence: 8, titleName: "API Connection", listModel: apiConnectionListData),
+                SubCategory.init(categorySequence: 8, titleName: "Server Connection", listModel: apiConnectionListData),
                 SubCategory.init(categorySequence: 9, titleName: "3Party Connection", listModel: thirdPartyConnectionListData),
 
 ]
@@ -54,9 +54,9 @@ let graphicListData = ListModel.init(listSequence: 7, storyboardName: "Graphic",
 
 
 
-//MARK: - 8. Api Connection List
-let apiConnectionListData = ListModel.init(listSequence: 8, storyboardName: "Component", viewControllers: [customButtonVC])
+//MARK: - 8. Server Connection List
+let apiConnectionListData = ListModel.init(listSequence: 8, storyboardName: "ServerConnection", viewControllers: [scructBindingVC, sendingImageVC])
 
 
 //MARK: - 9. Third Party Connection List
-let thirdPartyConnectionListData = ListModel.init(listSequence: 8, storyboardName: "Component", viewControllers: [customButtonVC])
+let thirdPartyConnectionListData = ListModel.init(listSequence: 8, storyboardName: "Component", viewControllers: [scructBindingVC, customButtonVC])

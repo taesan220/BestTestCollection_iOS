@@ -40,6 +40,7 @@ let drawTextVC = ListViewControllers.init(subViewControllerName: "Draw Text", su
 
 
 //MARK: - 8. Api Connection List
-
+let scructBindingVC = ListViewControllers.init(subViewControllerName: "Struct Binding From API Data", subViewControllerIdentifier: "scructBindingVC")
+let sendingImageVC = ListViewControllers.init(subViewControllerName: "Sending Image", subViewControllerIdentifier: "sendingImageVC")
 
 //MARK: - 1. Third Party Connection List

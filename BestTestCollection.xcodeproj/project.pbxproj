@@ -36,6 +36,12 @@
 		8086CF962608CE250014DB31 /* StudentDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086CF952608CE250014DB31 /* StudentDB.swift */; };
 		8086CF992608EC270014DB31 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8086CF982608EC270014DB31 /* WebView.storyboard */; };
 		8086CF9E2608EC630014DB31 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086CF9D2608EC630014DB31 /* WebViewViewController.swift */; };
+		8086CFA92608F5690014DB31 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086CFA82608F5690014DB31 /* HttpRequest.swift */; };
+		8086CFB02608F6A30014DB31 /* ScructBindingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086CFAF2608F6A30014DB31 /* ScructBindingViewController.swift */; };
+		80881785260A358E0097A914 /* ServerConnection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80881784260A358E0097A914 /* ServerConnection.storyboard */; };
+		80881789260A35F60097A914 /* SendingImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80881788260A35F60097A914 /* SendingImageViewController.swift */; };
+		80881790260A3DAF0097A914 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088178F260A3DAF0097A914 /* ImagePicker.swift */; };
+		80881793260A412A0097A914 /* SendFileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80881792260A412A0097A914 /* SendFileData.swift */; };
 		80956DA22606F89A00E03E79 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80956DA12606F89A00E03E79 /* CustomButton.swift */; };
 		80956DA62607562000E03E79 /* CusomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80956DA52607561F00E03E79 /* CusomTextField.swift */; };
 		80956DA9260756DD00E03E79 /* CustomTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80956DA8260756DD00E03E79 /* CustomTextFieldViewController.swift */; };
@@ -79,6 +85,12 @@
 		8086CF952608CE250014DB31 /* StudentDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDB.swift; sourceTree = "<group>"; };
 		8086CF982608EC270014DB31 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		8086CF9D2608EC630014DB31 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		8086CFA82608F5690014DB31 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		8086CFAF2608F6A30014DB31 /* ScructBindingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScructBindingViewController.swift; sourceTree = "<group>"; };
+		80881784260A358E0097A914 /* ServerConnection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServerConnection.storyboard; sourceTree = "<group>"; };
+		80881788260A35F60097A914 /* SendingImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingImageViewController.swift; sourceTree = "<group>"; };
+		8088178F260A3DAF0097A914 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		80881792260A412A0097A914 /* SendFileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFileData.swift; sourceTree = "<group>"; };
 		80956DA12606F89A00E03E79 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		80956DA52607561F00E03E79 /* CusomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CusomTextField.swift; sourceTree = "<group>"; };
 		80956DA8260756DD00E03E79 /* CustomTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +237,34 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
+		8086CFA22608F5350014DB31 /* ServerConnection */ = {
+			isa = PBXGroup;
+			children = (
+				8088178E260A3D950097A914 /* SendingImage */,
+				8086CFA72608F5560014DB31 /* HTTP */,
+				8086CFAF2608F6A30014DB31 /* ScructBindingViewController.swift */,
+				80881788260A35F60097A914 /* SendingImageViewController.swift */,
+			);
+			path = ServerConnection;
+			sourceTree = "<group>";
+		};
+		8086CFA72608F5560014DB31 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				8086CFA82608F5690014DB31 /* HttpRequest.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		8088178E260A3D950097A914 /* SendingImage */ = {
+			isa = PBXGroup;
+			children = (
+				8088178F260A3DAF0097A914 /* ImagePicker.swift */,
+				80881792260A412A0097A914 /* SendFileData.swift */,
+			);
+			path = SendingImage;
+			sourceTree = "<group>";
+		};
 		80956DA02606F87300E03E79 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +327,7 @@
 				807496F426067229009B8BD2 /* TableView.storyboard */,
 				8086CF882608C0FB0014DB31 /* DataBase.storyboard */,
 				8086CF982608EC270014DB31 /* WebView.storyboard */,
+				80881784260A358E0097A914 /* ServerConnection.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -294,6 +335,7 @@
 		809BACDF26013D7A00D975A1 /* ComponentViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8086CFA22608F5350014DB31 /* ServerConnection */,
 				8086CF9B2608EC2E0014DB31 /* WebView */,
 				8086CF822608C0AE0014DB31 /* DataBase */,
 				807496D92605B319009B8BD2 /* UIView */,
@@ -366,6 +408,7 @@
 				8086CF892608C0FB0014DB31 /* DataBase.storyboard in Resources */,
 				809BACA22601194F00D975A1 /* Assets.xcassets in Resources */,
 				809BACD726012C9D00D975A1 /* Component.storyboard in Resources */,
+				80881785260A358E0097A914 /* ServerConnection.storyboard in Resources */,
 				807496C02605ACF7009B8BD2 /* UIView.storyboard in Resources */,
 				807496B62605263E009B8BD2 /* Graphic.storyboard in Resources */,
 				807496E12605BDFA009B8BD2 /* AlertandToast.storyboard in Resources */,
@@ -385,8 +428,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				809BAC9D2601194D00D975A1 /* MainViewController.swift in Sources */,
+				80881789260A35F60097A914 /* SendingImageViewController.swift in Sources */,
 				807496A62605041B009B8BD2 /* CategoryData.swift in Sources */,
 				809BACDB26013CF600D975A1 /* CustomButtonViewController.swift in Sources */,
+				80881793260A412A0097A914 /* SendFileData.swift in Sources */,
 				807496F126066E23009B8BD2 /* ExpandableTableView.swift in Sources */,
 				80956DA22606F89A00E03E79 /* CustomButton.swift in Sources */,
 				800EB06D2607B278002313BB /* ScreetKeyView.swift in Sources */,
@@ -394,11 +439,14 @@
 				8086CF932608CD650014DB31 /* DataBaseCenter.swift in Sources */,
 				807496BC2605AC9A009B8BD2 /* CustomIndicatorViewController.swift in Sources */,
 				807496AD2605092B009B8BD2 /* ListData.swift in Sources */,
+				8086CFA92608F5690014DB31 /* HttpRequest.swift in Sources */,
 				8086CF852608C0EC0014DB31 /* DataBaseViewController.swift in Sources */,
+				80881790260A3DAF0097A914 /* ImagePicker.swift in Sources */,
 				807496EA2605BF4F009B8BD2 /* Alert.swift in Sources */,
 				807496C32605AE01009B8BD2 /* Setting.swift in Sources */,
 				807496DC2605B34D009B8BD2 /* CustomIndicatorView.swift in Sources */,
 				8086CF9E2608EC630014DB31 /* WebViewViewController.swift in Sources */,
+				8086CFB02608F6A30014DB31 /* ScructBindingViewController.swift in Sources */,
 				807496AA2605079A009B8BD2 /* BaseDataModel.swift in Sources */,
 				800EB07E2607C0A5002313BB /* DrawScreetKey.swift in Sources */,
 				807496E52605BE3D009B8BD2 /* CustomAlertViewController.swift in Sources */,
