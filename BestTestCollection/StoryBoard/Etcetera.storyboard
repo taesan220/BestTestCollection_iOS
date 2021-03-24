@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Version Compare View Controller-->
+        <scene sceneID="H5S-jm-z0G">
+            <objects>
+                <viewController storyboardIdentifier="versionCompareVC" id="GPz-SR-liQ" customClass="VersionCompareViewController" customModule="BestTestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1J1-q0-Wqj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0.1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="owg-ki-rn1">
+                                <rect key="frame" x="30" y="195" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS3-TQ-wht">
+                                <rect key="frame" x="30" y="164" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0.2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jf6-en-0TW">
+                                <rect key="frame" x="30" y="290" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Up to date Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpd-r6-ckW">
+                                <rect key="frame" x="30" y="259" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnA-du-sql">
+                                <rect key="frame" x="30" y="354" width="354" height="30"/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateButtonPressed:" destination="GPz-SR-liQ" eventType="touchUpInside" id="Ckf-5h-nFR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exk-vz-mfj">
+                                <rect key="frame" x="314" y="64" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fc8-Xj-yLG"/>
+                                    <constraint firstAttribute="width" constant="80" id="eDM-aq-QM6"/>
+                                </constraints>
+                                <state key="normal" title="Check"/>
+                                <connections>
+                                    <action selector="versionCompareButtonPressed:" destination="GPz-SR-liQ" eventType="touchUpInside" id="T1D-76-RUY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bk6-Ls-hSI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jf6-en-0TW" firstAttribute="trailing" secondItem="vpd-r6-ckW" secondAttribute="trailing" id="4yx-A5-zCm"/>
+                            <constraint firstItem="vnA-du-sql" firstAttribute="top" secondItem="jf6-en-0TW" secondAttribute="bottom" constant="30" id="5Id-b0-suj"/>
+                            <constraint firstItem="jf6-en-0TW" firstAttribute="leading" secondItem="vpd-r6-ckW" secondAttribute="leading" id="8kP-6H-S4Z"/>
+                            <constraint firstItem="owg-ki-rn1" firstAttribute="top" secondItem="MS3-TQ-wht" secondAttribute="bottom" constant="10" id="Acm-SQ-9TZ"/>
+                            <constraint firstItem="vpd-r6-ckW" firstAttribute="top" secondItem="owg-ki-rn1" secondAttribute="bottom" constant="30" id="Aug-7b-qu9"/>
+                            <constraint firstItem="vnA-du-sql" firstAttribute="leading" secondItem="jf6-en-0TW" secondAttribute="leading" id="DmH-I1-ZDl"/>
+                            <constraint firstItem="bk6-Ls-hSI" firstAttribute="trailing" secondItem="exk-vz-mfj" secondAttribute="trailing" constant="20" id="MDF-SA-S19"/>
+                            <constraint firstItem="owg-ki-rn1" firstAttribute="leading" secondItem="MS3-TQ-wht" secondAttribute="leading" id="MYQ-fQ-hZ9"/>
+                            <constraint firstItem="MS3-TQ-wht" firstAttribute="top" secondItem="exk-vz-mfj" secondAttribute="bottom" constant="60" id="Wnt-N2-W2T"/>
+                            <constraint firstItem="MS3-TQ-wht" firstAttribute="leading" secondItem="bk6-Ls-hSI" secondAttribute="leading" constant="30" id="YCk-BW-Mmc"/>
+                            <constraint firstItem="vpd-r6-ckW" firstAttribute="trailing" secondItem="owg-ki-rn1" secondAttribute="trailing" id="bvO-aL-9Jg"/>
+                            <constraint firstItem="exk-vz-mfj" firstAttribute="top" secondItem="bk6-Ls-hSI" secondAttribute="top" constant="20" id="gNV-xZ-70S"/>
+                            <constraint firstItem="owg-ki-rn1" firstAttribute="trailing" secondItem="MS3-TQ-wht" secondAttribute="trailing" id="mjs-eb-CpE"/>
+                            <constraint firstItem="vpd-r6-ckW" firstAttribute="leading" secondItem="owg-ki-rn1" secondAttribute="leading" id="n64-xK-wgQ"/>
+                            <constraint firstItem="jf6-en-0TW" firstAttribute="top" secondItem="vpd-r6-ckW" secondAttribute="bottom" constant="10" id="pbt-MU-b0c"/>
+                            <constraint firstItem="bk6-Ls-hSI" firstAttribute="trailing" secondItem="MS3-TQ-wht" secondAttribute="trailing" constant="30" id="qZO-7v-e2z"/>
+                            <constraint firstItem="vnA-du-sql" firstAttribute="trailing" secondItem="jf6-en-0TW" secondAttribute="trailing" id="zqZ-qV-7oo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnUpdate" destination="vnA-du-sql" id="46E-qE-s6t"/>
+                        <outlet property="btnVersionCompare" destination="exk-vz-mfj" id="hlr-SW-pPy"/>
+                        <outlet property="tfCurrentVersion" destination="owg-ki-rn1" id="Sh7-Qb-cxg"/>
+                        <outlet property="tfUpToDateVersion" destination="jf6-en-0TW" id="XE3-Hz-r1K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bar-fU-DqD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

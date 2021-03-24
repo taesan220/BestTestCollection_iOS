@@ -22,6 +22,8 @@ let category = [SubCategory.init(categorySequence: 1, titleName: "UIView", listM
                 SubCategory.init(categorySequence: 7, titleName: "Graphic", listModel: graphicListData),
                 SubCategory.init(categorySequence: 8, titleName: "Server Connection", listModel: apiConnectionListData),
                 SubCategory.init(categorySequence: 9, titleName: "3Party Connection", listModel: thirdPartyConnectionListData),
+                SubCategory.init(categorySequence: 10, titleName: "Conversion", listModel: conversionListData),
+                SubCategory.init(categorySequence: 11, titleName: "Etcetera", listModel: etceteraListData),
 
 ]
 
@@ -59,4 +61,10 @@ let apiConnectionListData = ListModel.init(listSequence: 8, storyboardName: "Ser
 
 
 //MARK: - 9. Third Party Connection List
-let thirdPartyConnectionListData = ListModel.init(listSequence: 8, storyboardName: "Component", viewControllers: [scructBindingVC, customButtonVC])
+let thirdPartyConnectionListData = ListModel.init(listSequence: 9, storyboardName: "Component", viewControllers: [scructBindingVC, customButtonVC])
+
+//MARK: - 10. Conversion Data included Decrypt and Encrypt
+let conversionListData = ListModel.init(listSequence: 10, storyboardName: "Conversion", viewControllers: [jwtConversionVC, stringToJsonVC])
+
+//MARK: - 11. Etcetera
+let etceteraListData = ListModel.init(listSequence: 11, storyboardName: "Etcetera", viewControllers: [versionCompareVC])

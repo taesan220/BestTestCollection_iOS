@@ -44,3 +44,13 @@ let scructBindingVC = ListViewControllers.init(subViewControllerName: "Struct Bi
 let sendingImageVC = ListViewControllers.init(subViewControllerName: "Sending Image", subViewControllerIdentifier: "sendingImageVC")
 
 //MARK: - 1. Third Party Connection List
+
+
+//MARK: - 9. Conversion Data included Decrypt and Encrypt
+
+let jwtConversionVC = ListViewControllers.init(subViewControllerName: "JWT Conversion", subViewControllerIdentifier: "jwtConversionVC")
+
+let stringToJsonVC = ListViewControllers.init(subViewControllerName: "String to JSON Conversion", subViewControllerIdentifier: "stringToJsonVC")
+
+//MARK: - 10 . Etcetera
+let versionCompareVC = ListViewControllers.init(subViewControllerName: "Version Comparison", subViewControllerIdentifier: "versionCompareVC")

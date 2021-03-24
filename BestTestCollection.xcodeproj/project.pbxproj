@@ -53,6 +53,11 @@
 		809BACD12601276E00D975A1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BACD02601276E00D975A1 /* CategoryViewController.swift */; };
 		809BACD726012C9D00D975A1 /* Component.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809BACD626012C9D00D975A1 /* Component.storyboard */; };
 		809BACDB26013CF600D975A1 /* CustomButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BACDA26013CF600D975A1 /* CustomButtonViewController.swift */; };
+		80ABC93F260BC08800E684E7 /* Conversion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80ABC93E260BC08800E684E7 /* Conversion.storyboard */; };
+		80ABC942260BC09600E684E7 /* Etcetera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80ABC941260BC09600E684E7 /* Etcetera.storyboard */; };
+		80ABC948260BC17900E684E7 /* JWTConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ABC947260BC17900E684E7 /* JWTConversionViewController.swift */; };
+		80ABC94B260BC18F00E684E7 /* StringToJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ABC94A260BC18F00E684E7 /* StringToJsonViewController.swift */; };
+		80ABC94E260BC1CD00E684E7 /* VersionCompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ABC94D260BC1CD00E684E7 /* VersionCompareViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +109,11 @@
 		809BACD02601276E00D975A1 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		809BACD626012C9D00D975A1 /* Component.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Component.storyboard; sourceTree = "<group>"; };
 		809BACDA26013CF600D975A1 /* CustomButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonViewController.swift; sourceTree = "<group>"; };
+		80ABC93E260BC08800E684E7 /* Conversion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conversion.storyboard; sourceTree = "<group>"; };
+		80ABC941260BC09600E684E7 /* Etcetera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Etcetera.storyboard; sourceTree = "<group>"; };
+		80ABC947260BC17900E684E7 /* JWTConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTConversionViewController.swift; sourceTree = "<group>"; };
+		80ABC94A260BC18F00E684E7 /* StringToJsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToJsonViewController.swift; sourceTree = "<group>"; };
+		80ABC94D260BC1CD00E684E7 /* VersionCompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCompareViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +338,8 @@
 				8086CF882608C0FB0014DB31 /* DataBase.storyboard */,
 				8086CF982608EC270014DB31 /* WebView.storyboard */,
 				80881784260A358E0097A914 /* ServerConnection.storyboard */,
+				80ABC93E260BC08800E684E7 /* Conversion.storyboard */,
+				80ABC941260BC09600E684E7 /* Etcetera.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -335,6 +347,8 @@
 		809BACDF26013D7A00D975A1 /* ComponentViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				80ABC945260BC0F300E684E7 /* Etcetera */,
+				80ABC944260BC0E400E684E7 /* Conversion */,
 				8086CFA22608F5350014DB31 /* ServerConnection */,
 				8086CF9B2608EC2E0014DB31 /* WebView */,
 				8086CF822608C0AE0014DB31 /* DataBase */,
@@ -345,6 +359,23 @@
 				80956DA02606F87300E03E79 /* Component */,
 			);
 			path = ComponentViewControllers;
+			sourceTree = "<group>";
+		};
+		80ABC944260BC0E400E684E7 /* Conversion */ = {
+			isa = PBXGroup;
+			children = (
+				80ABC947260BC17900E684E7 /* JWTConversionViewController.swift */,
+				80ABC94A260BC18F00E684E7 /* StringToJsonViewController.swift */,
+			);
+			path = Conversion;
+			sourceTree = "<group>";
+		};
+		80ABC945260BC0F300E684E7 /* Etcetera */ = {
+			isa = PBXGroup;
+			children = (
+				80ABC94D260BC1CD00E684E7 /* VersionCompareViewController.swift */,
+			);
+			path = Etcetera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,8 +439,10 @@
 				8086CF892608C0FB0014DB31 /* DataBase.storyboard in Resources */,
 				809BACA22601194F00D975A1 /* Assets.xcassets in Resources */,
 				809BACD726012C9D00D975A1 /* Component.storyboard in Resources */,
+				80ABC93F260BC08800E684E7 /* Conversion.storyboard in Resources */,
 				80881785260A358E0097A914 /* ServerConnection.storyboard in Resources */,
 				807496C02605ACF7009B8BD2 /* UIView.storyboard in Resources */,
+				80ABC942260BC09600E684E7 /* Etcetera.storyboard in Resources */,
 				807496B62605263E009B8BD2 /* Graphic.storyboard in Resources */,
 				807496E12605BDFA009B8BD2 /* AlertandToast.storyboard in Resources */,
 				807496F526067229009B8BD2 /* TableView.storyboard in Resources */,
@@ -428,11 +461,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				809BAC9D2601194D00D975A1 /* MainViewController.swift in Sources */,
+				80ABC94E260BC1CD00E684E7 /* VersionCompareViewController.swift in Sources */,
 				80881789260A35F60097A914 /* SendingImageViewController.swift in Sources */,
 				807496A62605041B009B8BD2 /* CategoryData.swift in Sources */,
 				809BACDB26013CF600D975A1 /* CustomButtonViewController.swift in Sources */,
 				80881793260A412A0097A914 /* SendFileData.swift in Sources */,
 				807496F126066E23009B8BD2 /* ExpandableTableView.swift in Sources */,
+				80ABC948260BC17900E684E7 /* JWTConversionViewController.swift in Sources */,
 				80956DA22606F89A00E03E79 /* CustomButton.swift in Sources */,
 				800EB06D2607B278002313BB /* ScreetKeyView.swift in Sources */,
 				80956DA9260756DD00E03E79 /* CustomTextFieldViewController.swift in Sources */,
@@ -443,6 +478,7 @@
 				8086CF852608C0EC0014DB31 /* DataBaseViewController.swift in Sources */,
 				80881790260A3DAF0097A914 /* ImagePicker.swift in Sources */,
 				807496EA2605BF4F009B8BD2 /* Alert.swift in Sources */,
+				80ABC94B260BC18F00E684E7 /* StringToJsonViewController.swift in Sources */,
 				807496C32605AE01009B8BD2 /* Setting.swift in Sources */,
 				807496DC2605B34D009B8BD2 /* CustomIndicatorView.swift in Sources */,
 				8086CF9E2608EC630014DB31 /* WebViewViewController.swift in Sources */,
