@@ -22,6 +22,10 @@ class VersionCompareViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //현재 앱 버전
+        guard let appVersion:String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String else { return }
+        self.tfCurrentVersion.text = appVersion
+        
     }
     
     func initView() {
@@ -36,20 +40,29 @@ class VersionCompareViewController: UIViewController {
 
     @IBAction func versionCompareButtonPressed(_ sender: Any) {
         
-        let isUptoDate = self.tfCurrentVersion.text?.compare(tfUpToDateVersion.text!, options: .numeric)
+        let checkNewVersion = self.tfCurrentVersion.text?.compare(tfUpToDateVersion.text!, options: .numeric)
         
-        if isUptoDate == .orderedAscending {     //버전 업데이트가 필요한 경우
+        //최신 버전이 아니면
+        switch checkNewVersion {
+        case .orderedAscending :    //버전 업데이트가 필요한 경우
+            print("버전 업데이트가 필요 합니다.")
             btnUpdate.isEnabled = true
             self.btnUpdate.isHidden = false
-            
-        } else if isUptoDate == .orderedDescending {    //비교 대상 버전이 더 큰경우
-            print("비교 대상 버전이 더 큼")
+            break
+        case .orderedDescending :   //현재 앱 버전이 더 큰경우
+            print("현재 앱 버전이 서버 버전보다 더 높습니다.")
+            //버전이 최신 버전이면 그냥 통과
             self.btnUpdate.isEnabled = false
             self.btnUpdate.isHidden = true
-            
-        } else if isUptoDate == .orderedSame {      //현재 버전이 최신버전인 경우
+            break
+        case .orderedSame :         //현재 버전과 서버 최신 버전이 같은경우
+            print("현재 앱이 최신 버전 입니다.")
+            //버전이 최신 버전이면 그냥 통과
             self.btnUpdate.isEnabled = false
             self.btnUpdate.isHidden = true
+            break
+        case .none:
+            print("버전 비교 오류")
         }
     }
     
