@@ -175,11 +175,11 @@ class Alert: UIAlertController, UITextFieldDelegate {
 
     
     //첨부된 ViewControlelr 파라미터로 알럿을 띄우는 메소드
-    func popUpAlertWithMessageWithViewController(viewController: UIViewController, message: String, completion:(() -> Void)? = nil) {
+    func popUpAlertWithMessageWithViewController(viewController: UIViewController, message: String, positiveButtonName: String = "OK", completion:(() -> Void)? = nil) {
         
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+        alert.addAction(UIAlertAction(title: positiveButtonName, style: .default, handler: { (UIAlertAction) in
             if (completion != nil) {
                 completion!()
             }
@@ -190,11 +190,11 @@ class Alert: UIAlertController, UITextFieldDelegate {
     }
     
     //최 상위 ViewController으로 알럿을 띄우는 메소드
-    func popUpAlertWithMessage(message: String, completion:(() -> Void)? = nil) {
+    func popUpAlertWithMessage(message: String, positiveButtonName: String = "OK", completion:(() -> Void)? = nil) {
         
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+        alert.addAction(UIAlertAction(title: positiveButtonName, style: .default, handler: { (UIAlertAction) in
             if (completion != nil) {
                 completion!()
             }
@@ -206,17 +206,17 @@ class Alert: UIAlertController, UITextFieldDelegate {
     }
     
     //첨부된 ViewControlelr 파라미터로 취소 가능한 알럿을 띄우는 메소드
-    func popUpCancelableAlertWithMessageWithViewController(viewController: UIViewController, message: String, completion:((_ isCancelButtonPressed: Bool) -> Void)? = nil) {
+    func popUpCancelableAlertWithMessageWithViewController(viewController: UIViewController, message: String, positiveButtonName: String = "OK", negativeButtonName: String = "Cancel", completion:((_ isCancelButtonPressed: Bool) -> Void)? = nil) {
         
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+        alert.addAction(UIAlertAction(title: positiveButtonName, style: .default, handler: { (UIAlertAction) in
             
             if (completion != nil) {
                 completion!(true)
             }
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (UIAlertAction) in
+        alert.addAction(UIAlertAction(title: negativeButtonName, style: .default, handler: { (UIAlertAction) in
             if (completion != nil) {
                 completion!(false)
             }
@@ -227,16 +227,16 @@ class Alert: UIAlertController, UITextFieldDelegate {
     }
     
     //최 상위 ViewController으로 취소 가능한 알럿을 띄우는 메소드
-    func popUpCancelableAlertWithMessage(message: String, completion:((_ isCancelButtonPressed: Bool) -> Void)? = nil) {
+    func popUpCancelableAlertWithMessage(message: String, positiveButtonName: String = "OK", negativeButtonName: String = "Cancel", completion:((_ isCancelButtonPressed: Bool) -> Void)? = nil) {
         
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
+        alert.addAction(UIAlertAction(title: positiveButtonName, style: .default, handler: { (UIAlertAction) in
             if (completion != nil) {
                 completion!(true)
             }
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (UIAlertAction) in
+        alert.addAction(UIAlertAction(title: negativeButtonName, style: .default, handler: { (UIAlertAction) in
             if (completion != nil) {
                 completion!(false)
             }
