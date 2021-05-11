@@ -10,6 +10,7 @@ import UIKit
 protocol CustomTextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField)
     func textFieldDidEndEditing(_ textField: UITextField)
+    func deleteBackground()
 }
 
 class CustomTextField: UITextField, UITextFieldDelegate {
@@ -92,5 +93,14 @@ class CustomTextField: UITextField, UITextFieldDelegate {
         }
         
         return true
+    }
+    
+    //BackSpace 키를 눌렀을때 호출 되는 메소드
+    override func deleteBackward() {
+        super.deleteBackward()
+        
+        if self.customTextFieldDelegate != nil {
+            customTextFieldDelegate.deleteBackground()
+        }
     }
 }

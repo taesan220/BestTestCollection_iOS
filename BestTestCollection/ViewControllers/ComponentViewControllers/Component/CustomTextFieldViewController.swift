@@ -7,8 +7,8 @@
 
 import UIKit
 
-class CustomTextFieldViewController: UIViewController {
-    
+class CustomTextFieldViewController: UIViewController, CustomTextFieldDelegate {
+
 //MARK: - Global veriable
     @IBOutlet weak var customTextField: CustomTextField!
     
@@ -19,6 +19,8 @@ class CustomTextFieldViewController: UIViewController {
         super.viewDidLoad()
         
         setKeyboardHideEvent()
+        
+        customTextField.customTextFieldDelegate = self
     }
 
     func setKeyboardHideEvent() {
@@ -31,5 +33,15 @@ class CustomTextFieldViewController: UIViewController {
         self.view.endEditing(true)  //키보드 숨김
     }
 
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        print("textFieldDidBeginEditing")
+    }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("textFieldDidEndEditing")
+    }
+    
+    func deleteBackground() {
+        print("deleteBackground")
+    }
 }

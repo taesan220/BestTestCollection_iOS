@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,9 +58,15 @@
 		80ABC948260BC17900E684E7 /* JWTConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ABC947260BC17900E684E7 /* JWTConversionViewController.swift */; };
 		80ABC94B260BC18F00E684E7 /* StringToJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ABC94A260BC18F00E684E7 /* StringToJsonViewController.swift */; };
 		80ABC94E260BC1CD00E684E7 /* VersionCompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ABC94D260BC1CD00E684E7 /* VersionCompareViewController.swift */; };
+		B349089F261C60D100657991 /* 3PartyConnection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B349089E261C60D100657991 /* 3PartyConnection.storyboard */; };
+		B34908A4261C631000657991 /* FirebaseConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34908A3261C631000657991 /* FirebaseConnectionViewController.swift */; };
+		B3D87CB7261D487A00924457 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3D87CB6261D487A00924457 /* GoogleService-Info.plist */; };
+		B3D87CE0261D777800924457 /* FirebaseLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D87CDF261D777800924457 /* FirebaseLog.swift */; };
+		CD248006476CA2A4D342CBE5 /* Pods_BestTestCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADBBE228E370E03A099C80B /* Pods_BestTestCollection.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ADBBE228E370E03A099C80B /* Pods_BestTestCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestTestCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		800EB06B2607B278002313BB /* ScreetKeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreetKeyView.swift; sourceTree = "<group>"; };
 		800EB06C2607B278002313BB /* ScreetKeyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreetKeyView.xib; sourceTree = "<group>"; };
 		800EB0702607B359002313BB /* ScreetKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreetKeyViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +120,13 @@
 		80ABC947260BC17900E684E7 /* JWTConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTConversionViewController.swift; sourceTree = "<group>"; };
 		80ABC94A260BC18F00E684E7 /* StringToJsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToJsonViewController.swift; sourceTree = "<group>"; };
 		80ABC94D260BC1CD00E684E7 /* VersionCompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCompareViewController.swift; sourceTree = "<group>"; };
+		95F91FA98489BF2D02025AC2 /* Pods-BestTestCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestTestCollection.release.xcconfig"; path = "Target Support Files/Pods-BestTestCollection/Pods-BestTestCollection.release.xcconfig"; sourceTree = "<group>"; };
+		B349089E261C60D100657991 /* 3PartyConnection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = 3PartyConnection.storyboard; sourceTree = "<group>"; };
+		B34908A3261C631000657991 /* FirebaseConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConnectionViewController.swift; sourceTree = "<group>"; };
+		B3D87CB6261D487A00924457 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B3D87CB9261D488A00924457 /* BestTestCollection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestTestCollection.entitlements; sourceTree = "<group>"; };
+		B3D87CDF261D777800924457 /* FirebaseLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLog.swift; sourceTree = "<group>"; };
+		C84440435DAC4BC24893EBA1 /* Pods-BestTestCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestTestCollection.debug.xcconfig"; path = "Target Support Files/Pods-BestTestCollection/Pods-BestTestCollection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +134,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD248006476CA2A4D342CBE5 /* Pods_BestTestCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AF1D5F5AEA6DA08CFF25633 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C84440435DAC4BC24893EBA1 /* Pods-BestTestCollection.debug.xcconfig */,
+				95F91FA98489BF2D02025AC2 /* Pods-BestTestCollection.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D774818431FD34F79ACD1A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ADBBE228E370E03A099C80B /* Pods_BestTestCollection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		800EB0672607A645002313BB /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +322,8 @@
 			children = (
 				809BAC972601194D00D975A1 /* BestTestCollection */,
 				809BAC962601194D00D975A1 /* Products */,
+				1AF1D5F5AEA6DA08CFF25633 /* Pods */,
+				6D774818431FD34F79ACD1A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -305,12 +338,14 @@
 		809BAC972601194D00D975A1 /* BestTestCollection */ = {
 			isa = PBXGroup;
 			children = (
+				B3D87CB9261D488A00924457 /* BestTestCollection.entitlements */,
 				807496A426050404009B8BD2 /* BaseData */,
 				809BACB6260124DF00D975A1 /* ViewControllers */,
 				809BACD526012C8800D975A1 /* StoryBoard */,
 				809BAC982601194D00D975A1 /* AppDelegate.swift */,
 				809BAC9C2601194D00D975A1 /* MainViewController.swift */,
 				809BACA62601194F00D975A1 /* Info.plist */,
+				B3D87CB6261D487A00924457 /* GoogleService-Info.plist */,
 				809BAC9E2601194D00D975A1 /* Main.storyboard */,
 				809BACA12601194F00D975A1 /* Assets.xcassets */,
 				809BACA32601194F00D975A1 /* LaunchScreen.storyboard */,
@@ -340,6 +375,7 @@
 				80881784260A358E0097A914 /* ServerConnection.storyboard */,
 				80ABC93E260BC08800E684E7 /* Conversion.storyboard */,
 				80ABC941260BC09600E684E7 /* Etcetera.storyboard */,
+				B349089E261C60D100657991 /* 3PartyConnection.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -350,6 +386,7 @@
 				80ABC945260BC0F300E684E7 /* Etcetera */,
 				80ABC944260BC0E400E684E7 /* Conversion */,
 				8086CFA22608F5350014DB31 /* ServerConnection */,
+				B34908A1261C623C00657991 /* 3PartyConnection */,
 				8086CF9B2608EC2E0014DB31 /* WebView */,
 				8086CF822608C0AE0014DB31 /* DataBase */,
 				807496D92605B319009B8BD2 /* UIView */,
@@ -378,6 +415,15 @@
 			path = Etcetera;
 			sourceTree = "<group>";
 		};
+		B34908A1261C623C00657991 /* 3PartyConnection */ = {
+			isa = PBXGroup;
+			children = (
+				B3D87CDF261D777800924457 /* FirebaseLog.swift */,
+				B34908A3261C631000657991 /* FirebaseConnectionViewController.swift */,
+			);
+			path = 3PartyConnection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,9 +431,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 809BACA92601194F00D975A1 /* Build configuration list for PBXNativeTarget "BestTestCollection" */;
 			buildPhases = (
+				7B2F1CB58F9E189FEE6AFBD8 /* [CP] Check Pods Manifest.lock */,
 				809BAC912601194D00D975A1 /* Sources */,
 				809BAC922601194D00D975A1 /* Frameworks */,
 				809BAC932601194D00D975A1 /* Resources */,
+				EC8CB27F0B358EA088BA468C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -440,12 +488,14 @@
 				809BACA22601194F00D975A1 /* Assets.xcassets in Resources */,
 				809BACD726012C9D00D975A1 /* Component.storyboard in Resources */,
 				80ABC93F260BC08800E684E7 /* Conversion.storyboard in Resources */,
+				B349089F261C60D100657991 /* 3PartyConnection.storyboard in Resources */,
 				80881785260A358E0097A914 /* ServerConnection.storyboard in Resources */,
 				807496C02605ACF7009B8BD2 /* UIView.storyboard in Resources */,
 				80ABC942260BC09600E684E7 /* Etcetera.storyboard in Resources */,
 				807496B62605263E009B8BD2 /* Graphic.storyboard in Resources */,
 				807496E12605BDFA009B8BD2 /* AlertandToast.storyboard in Resources */,
 				807496F526067229009B8BD2 /* TableView.storyboard in Resources */,
+				B3D87CB7261D487A00924457 /* GoogleService-Info.plist in Resources */,
 				809BACA02601194D00D975A1 /* Main.storyboard in Resources */,
 				800EB0762607B8C1002313BB /* ImageScreetKeyView.xib in Resources */,
 				8086CF992608EC270014DB31 /* WebView.storyboard in Resources */,
@@ -454,6 +504,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B2F1CB58F9E189FEE6AFBD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BestTestCollection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8CB27F0B358EA088BA468C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BestTestCollection/Pods-BestTestCollection-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BestTestCollection/Pods-BestTestCollection-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BestTestCollection/Pods-BestTestCollection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		809BAC912601194D00D975A1 /* Sources */ = {
@@ -489,6 +581,7 @@
 				8086CF8C2608C76A0014DB31 /* SQLiteBase.swift in Sources */,
 				800EB0772607B8C1002313BB /* ImageScreetKeyView.swift in Sources */,
 				80956DA62607562000E03E79 /* CusomTextField.swift in Sources */,
+				B3D87CE0261D777800924457 /* FirebaseLog.swift in Sources */,
 				807496F826067AA9009B8BD2 /* DynamicHeightTableViewController.swift in Sources */,
 				809BAC992601194D00D975A1 /* AppDelegate.swift in Sources */,
 				807496B926052668009B8BD2 /* DrawTextViewController.swift in Sources */,
@@ -496,6 +589,7 @@
 				8086CF962608CE250014DB31 /* StudentDB.swift in Sources */,
 				800EB0712607B359002313BB /* ScreetKeyViewController.swift in Sources */,
 				809BACD12601276E00D975A1 /* CategoryViewController.swift in Sources */,
+				B34908A4261C631000657991 /* FirebaseConnectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,9 +733,11 @@
 		};
 		809BACAA2601194F00D975A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84440435DAC4BC24893EBA1 /* Pods-BestTestCollection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BestTestCollection/BestTestCollection.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTR734SZDN;
@@ -651,7 +747,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = taesan.BestTestCollection;
+				PRODUCT_BUNDLE_IDENTIFIER = immai.BestTestCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -661,9 +757,11 @@
 		};
 		809BACAB2601194F00D975A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95F91FA98489BF2D02025AC2 /* Pods-BestTestCollection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BestTestCollection/BestTestCollection.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YTR734SZDN;
@@ -673,7 +771,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = taesan.BestTestCollection;
+				PRODUCT_BUNDLE_IDENTIFIER = immai.BestTestCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

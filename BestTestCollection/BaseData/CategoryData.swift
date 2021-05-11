@@ -61,7 +61,7 @@ let apiConnectionListData = ListModel.init(listSequence: 8, storyboardName: "Ser
 
 
 //MARK: - 9. Third Party Connection List
-let thirdPartyConnectionListData = ListModel.init(listSequence: 9, storyboardName: "Component", viewControllers: [scructBindingVC, customButtonVC])
+let thirdPartyConnectionListData = ListModel.init(listSequence: 9, storyboardName: "3PartyConnection", viewControllers: [firebaseVC])
 
 //MARK: - 10. Conversion Data included Decrypt and Encrypt
 let conversionListData = ListModel.init(listSequence: 10, storyboardName: "Conversion", viewControllers: [jwtConversionVC, stringToJsonVC])
